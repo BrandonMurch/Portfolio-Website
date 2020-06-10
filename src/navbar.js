@@ -1,5 +1,7 @@
 import React from 'react';
 import './navbar.css';
+import GithugLogo from './logos/Github_Logo.png';
+import LinkedInLogo from './logos/Linkedin_Logo.png';
 
 
 class NavBar extends React.Component {
@@ -23,10 +25,12 @@ class NavBar extends React.Component {
         const pages = getPages();
         const social = getSocials();
 
-        return <ul className="navbar">
-            {this.getLinks(pages,true)}
-            {this.getLinks(social, false)}
-        </ul>;
+        return (
+            <ul className="navbar">
+                {this.getLinks(pages,true)}
+                {this.getLinks(social, false)}
+            </ul>
+        )
     }
 }
 
@@ -84,7 +88,7 @@ function getSocials() {
     socials.push(
         <NavBarItem
             name={"Github"}
-            logo={'/logos/Github_Logo.png'}
+            logo={GithugLogo}
             location={"https://www.github.com/BrandonMurch"}
             index={0}
         />
@@ -92,7 +96,7 @@ function getSocials() {
     socials.push(
         <NavBarItem
             name={"LinkedIn"}
-            logo={'/logos/Linkedin_Logo.png'}
+            logo={LinkedInLogo}
             location={"https://www.linkedin.com/in/brandonmurch/"}
             index={1}
         />

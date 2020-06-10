@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #666;
 }
 
 .navbar-item, .navbar-group {
@@ -12,6 +11,7 @@
 
 .navbar-item {
     padding-top: 0.8em;
+
 }
 
 .navbar-left {
@@ -25,16 +25,23 @@
 
 .navbar-link {
     display: inline;
-    color: #FFF;
     text-decoration: none;
-    padding:2em;
+    padding:0.5em;
+    text-transform: lowercase;
+    color: #666;
 }
 
 .navbar-link:hover {
-    background-color: #444;
+    color: black;
+    font-weight: 900;
 }
 
 
 .navbar-image {
-    height: 2em;
+    height: 1.5em;
+    margin-top: 0.4em;
+}
+
+.navbar-image:hover {
+    filter: invert(100%);
 }
