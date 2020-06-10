@@ -28,12 +28,12 @@
     text-decoration: none;
     padding:0.5em;
     text-transform: lowercase;
-    color: #666;
+
 }
 
 .navbar-link:hover {
-    color: black;
-    font-weight: 900;
+    color: white;
+    text-decoration: underline;
 }
 
 

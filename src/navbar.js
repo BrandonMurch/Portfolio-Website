@@ -11,7 +11,7 @@ class NavBar extends React.Component {
             const display = props.logo ? <img className="navbar-image" src={props.logo} alt={props.name}/> : props.name;
             return (
                 <li key={props.index} className="navbar-item">
-                    <a className="navbar-link" href={props.location}>
+                    <a className="text navbar-link" href={props.location}>
                         {display}
                     </a>
                 </li>
