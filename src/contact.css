@@ -1,0 +1,26 @@
+#contact {
+    position: relative;
+    top: 100vh;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10vh 0;
+}
+
+.contact-group {
+    width: 50%;
+    padding: 0 0.5em;
+    display: inline-grid;
+}
+
+.contact-text-input, .contact-textbox {
+    width: 100%;
+    background-color: #eee;
+}
+
+.contact-submit {
+    width: 100%;
+    margin: 1em 0;
+}
