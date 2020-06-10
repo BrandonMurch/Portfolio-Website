@@ -1,0 +1,21 @@
+#aboutme {
+    position:relative;
+}
+
+.aboutme-image {
+    width: 100%;
+}
+
+.aboutme-box {
+    color: gray;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.aboutme-title {
+    padding: 0.5em;
+    font-size: 40px;
+}
