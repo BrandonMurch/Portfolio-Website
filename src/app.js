@@ -1,7 +1,10 @@
 import React from 'react';
+// import { Route } from 'react-router';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import styles from './app.module.css';
 import NavBar from './navbar';
-import AboutMe from './about_me';
+import About from './about_me';
+import Contact from './contact';
 
 class App extends React.Component {
     constructor(props) {
@@ -12,7 +15,7 @@ class App extends React.Component {
         };
         this.updateResize = this.updateResize.bind(this);
     }
-    
+
     componentDidMount() {
         this.updateResize();
         window.addEventListener("resize", this.updateResize);
@@ -36,8 +39,24 @@ class App extends React.Component {
         return (
             <div className={styles.app}>
                 <NavBar />
-                <AboutMe state={this.state}/>
-            </div>
+                <BrowserRouter>
+                    <div>
+                        <Switch>
+                            <Route path="/about">
+                                <About state={this.state} />
+                            </Route>
+                            <Route path="/contact">
+                                <Contact state={this.state} />
+                            </Route>
+                            <Route path = "/">
+                                <About state={this.state} />
+                            </Route>
+                        </Switch>
+                    </div>
+                </BrowserRouter>
+
+                {/* <About state={this.state}/>*/}
+                </div>
         )
     }
 }
