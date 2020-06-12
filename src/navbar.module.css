@@ -2,28 +2,33 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    position: fixed;
 }
 
-.navbar-item, .navbar-group {
+.group {
+    position: fixed;
     display: inline;
 }
 
-.navbar-item {
+.item {
+    display: inline;
     padding-top: 0.8em;
 
 }
 
-.navbar-left {
-    float: left;
+.leftSide {
+    composes: group;
+    left: 0;
     margin-top: 0.5em;
 }
 
-.navbar-right {
-    float: right;
+.rightSide {
+    composes: group;
+    right: 0;
 }
 
-.navbar-link {
+.link {
+    composes: text from "./project_globals.module.css";
     display: inline;
     text-decoration: none;
     padding:0.5em;
@@ -31,17 +36,17 @@
 
 }
 
-.navbar-link:hover {
+.link:hover {
     color: white;
     text-decoration: underline;
 }
 
 
-.navbar-image {
+.image {
     height: 1.5em;
     margin-top: 0.4em;
 }
 
-.navbar-image:hover {
+.image:hover {
     filter: invert(100%);
 }

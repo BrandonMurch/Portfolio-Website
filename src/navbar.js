@@ -1,5 +1,7 @@
 import React from 'react';
-import './navbar.css';
+import styles from './navbar.module.css';
+
+//media
 import GithugLogo from './logos/Github_Logo.png';
 import LinkedInLogo from './logos/Linkedin_Logo.png';
 
@@ -8,17 +10,17 @@ class NavBar extends React.Component {
     getLinks(pages, onLeft) {
         const items = pages.map(page => {
             const props = page.props;
-            const display = props.logo ? <img className="navbar-image" src={props.logo} alt={props.name}/> : props.name;
+            const display = props.logo ? <img className={styles.image} src={props.logo} alt={props.name}/> : props.name;
             return (
-                <li key={props.index} className="navbar-item">
-                    <a className="text navbar-link" href={props.location}>
+                <li key={props.index} className={styles.item}>
+                    <a className={styles.link} href={props.location}>
                         {display}
                     </a>
                 </li>
             )
         });
-        const navBarSide = onLeft ? "navbar-left" : "navbar-right"
-        return <div className={"navbar-group " + navBarSide}>{items}</div>
+        const navBarSide = onLeft ? styles.leftSide : styles.rightSide
+        return <div className={navBarSide}>{items}</div>
     }
 
     render() {
@@ -26,7 +28,7 @@ class NavBar extends React.Component {
         const social = getSocials();
 
         return (
-            <ul className="navbar">
+            <ul className={styles.navbar}>
                 {this.getLinks(pages,true)}
                 {this.getLinks(social, false)}
             </ul>

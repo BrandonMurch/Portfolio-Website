@@ -1,0 +1,32 @@
+#aboutme {
+    height: 100vh;
+    width: 100vw;
+}
+
+.landscapeBackground {
+    composes: background from "./project_globals.module.css";
+    background-image: url(images/Personal_Photo_gradient.jpg);
+}
+
+.verticalBackground {
+    composes: background from "./project_globals.module.css";
+    background-image: url(images/Personal_Photo_cropped.jpg);
+}
+
+.container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.title {
+    composes: text from "./project_globals.module.css";
+    padding: 0.5em;
+    font-size: 80px;
+}
+
+.subtitle {
+    composes: text from "./project_globals.module.css";
+}

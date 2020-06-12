@@ -3,24 +3,28 @@
     top: 100vh;
 }
 
-.contact-form {
+.contactForm {
     width: 60%;
     margin: 0 auto;
     padding: 10vh 0;
 }
 
-.contact-group {
+.label {
+    composes: text from "./project_globals.module.css";
+}
+
+.inputGroup {
     width: 50%;
     padding: 0 0.5em;
     display: inline-grid;
 }
 
-.contact-text-input, .contact-textbox {
+.textInput {
     width: 100%;
     background-color: #eee;
 }
 
-.contact-submit {
+.submit {
     width: 100%;
     margin: 1em 0;
 }

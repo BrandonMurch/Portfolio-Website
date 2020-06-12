@@ -1,0 +1,12 @@
+.text {
+    font: chivo,sans-serif;
+    color: white;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
