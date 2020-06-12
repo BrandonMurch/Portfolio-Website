@@ -12,8 +12,7 @@ class App extends React.Component {
         };
         this.updateResize = this.updateResize.bind(this);
     }
-
-
+    
     componentDidMount() {
         this.updateResize();
         window.addEventListener("resize", this.updateResize);

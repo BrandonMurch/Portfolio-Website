@@ -22,6 +22,7 @@
 }
 
 .title {
+    margin: auto;
     composes: text from "./project_globals.module.css";
     padding: 0.5em;
     font-size: 80px;
