@@ -14,6 +14,7 @@
     .background {
         composes: background from "./project_globals.module.css";
         background-image: url(images/Personal_Photo_gradient.jpg);
+        background-position: left;
     }
 }
 
