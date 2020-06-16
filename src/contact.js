@@ -6,11 +6,11 @@ class Contact extends React.Component {
         return (
             <form className={styles.contactForm}>
                 <div className={styles.inputGroup}>
-                    <label className={styles.label} for="name">Name</label><br />
+                    <label className={styles.label} htmlFor="name">Name</label><br />
                     <input className={styles.textInput} type="text" id="name"></input>
                 </div>
                 <div className={styles.inputGroup}>
-                    <label className={styles.label} for="email">Email</label><br />
+                    <label className={styles.label} htmlFor="email">Email</label><br />
                     <input className={styles.textInput}  type="email" id="email"></input>
                 </div>
                 <label className="text" >message</label>
