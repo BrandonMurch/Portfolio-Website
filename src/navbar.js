@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styles from './navbar.module.css';
 
 //media
@@ -13,9 +14,9 @@ class NavBar extends React.Component {
             const display = props.logo ? <img className={styles.image} src={props.logo} alt={props.name}/> : props.name;
             return (
                 <li key={props.index} className={styles.item}>
-                    <a className={styles.link} href={props.location}>
+                    <Link className={styles.link} to={props.location}>
                         {display}
-                    </a>
+                    </Link>
                 </li>
             )
         });
@@ -54,7 +55,7 @@ function getPages() {
         <NavBarItem
             name={"About Me"}
             logo={null}
-            location={"#about-me"}
+            location={"/about-me"}
             index={0}
         />
     );
@@ -62,7 +63,7 @@ function getPages() {
         <NavBarItem
             name={"Projects"}
             logo={null}
-            location={"#projects"}
+            location={"/projects"}
             index={1}
         />
     );
@@ -70,7 +71,7 @@ function getPages() {
         <NavBarItem
             name={"Relevant Courses"}
             logo={null}
-            location={"#courses"}
+            location={"/courses"}
             index={2}
         />
     );
@@ -78,7 +79,7 @@ function getPages() {
         <NavBarItem
             name={"Contact"}
             logo={null}
-            location={"#contact"}
+            location={"/contact"}
             index={3}
         />
     );
