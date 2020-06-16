@@ -3,14 +3,18 @@
     width: 100vw;
 }
 
-.landscapeBackground {
-    composes: background from "./project_globals.module.css";
-    background-image: url(images/Personal_Photo_gradient.jpg);
-}
 
-.portraitBackground {
+.background {
     composes: background from "./project_globals.module.css";
     background-image: url(images/Personal_Photo_cropped.jpg);
+    background-position: center;
+}
+
+@media screen and (orientation: landscape) {
+    .background {
+        composes: background from "./project_globals.module.css";
+        background-image: url(images/Personal_Photo_gradient.jpg);
+    }
 }
 
 .container {
@@ -24,10 +28,11 @@
 .title {
     margin: auto;
     composes: text from "./project_globals.module.css";
-    padding: 0.5em;
-    font-size: 80px;
+    padding: 0.5rem;
+    font-size: 4rem;
 }
 
 .subtitle {
     composes: text from "./project_globals.module.css";
+    font-size: 1.5rem;
 }
