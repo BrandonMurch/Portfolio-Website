@@ -4,6 +4,8 @@ import styles from './app.module.css';
 import NavBar from './navbar';
 import About from './about_me';
 import Contact from './contact';
+import Projects from './projects';
+import Experience from './experience';
 
 class App extends React.Component {
     constructor(props) {
@@ -42,6 +44,12 @@ class App extends React.Component {
                         </Route>
                         <Route path="/contact">
                             <Contact state={this.state} />
+                        </Route>
+                        <Route path="/projects">
+                            <Projects state={this.state} />
+                        </Route>
+                        <Route path="/experience">
+                            <Experience state={this.state} />
                         </Route>
                         <Route path = "/">
                             <About state={this.state} />
