@@ -1,8 +1,14 @@
 .navbar {
-    list-style-type: none;
+    composes: transparentBackground from "./project_globals.module.css";
     margin: 0;
     padding: 0;
     position: fixed;
+    height: 4rem;
+    width: 100%;
+}
+
+.list {
+    list-style-type: none;
 }
 
 .group {

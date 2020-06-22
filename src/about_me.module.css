@@ -1,18 +1,12 @@
-#aboutme {
-    height: 100vh;
-    width: 100vw;
-}
-
-
 .background {
-    composes: background from "./project_globals.module.css";
+    composes: backgroundImage from "./project_globals.module.css";
     background-image: url(images/Personal_Photo_cropped.jpg);
     background-position: center;
 }
 
 @media screen and (orientation: landscape) {
     .background {
-        composes: background from "./project_globals.module.css";
+        composes: backgroundImage from "./project_globals.module.css";
         background-image: url(images/Personal_Photo_gradient.jpg);
         background-position: left;
     }
@@ -20,7 +14,7 @@
 
 .container {
     position: fixed;
-    bottom: 0;
+    bottom: 5vh;
     right: 0;
     text-align: center;
     padding-bottom: 1em;

@@ -29,10 +29,12 @@ class NavBar extends React.Component {
         const social = getSocials();
 
         return (
-            <ul className={styles.navbar}>
-                {this.getLinks(pages,true)}
-                {this.getLinks(social, false)}
-            </ul>
+            <div className={styles.navbar}>
+                <ul className={styles.list}>
+                    {this.getLinks(pages,true)}
+                    {this.getLinks(social, false)}
+                </ul>
+            </div>
         )
     }
 }
@@ -69,9 +71,9 @@ function getPages() {
     );
     pages.push(
         <NavBarItem
-            name={"Relevant Courses"}
+            name={"Experience"}
             logo={null}
-            location={"/courses"}
+            location={"/experience"}
             index={2}
         />
     );
