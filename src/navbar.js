@@ -29,12 +29,12 @@ class NavBar extends React.Component {
         const social = getSocials();
 
         return (
-            <div className={styles.navbar}>
+            <section className={styles.navbar}>
                 <ul className={styles.list}>
                     {this.getLinks(pages,true)}
                     {this.getLinks(social, false)}
                 </ul>
-            </div>
+            </section>
         )
     }
 }

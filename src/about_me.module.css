@@ -4,6 +4,10 @@
     background-position: center;
 }
 
+.aboutMe {
+    composes: background;
+}
+
 @media screen and (orientation: landscape) {
     .background {
         composes: backgroundImage from "./project_globals.module.css";

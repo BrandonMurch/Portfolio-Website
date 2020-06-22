@@ -4,10 +4,15 @@
     background-position: center;
 }
 
+.contact {
+    composes: background;
+}
+
 .contactForm {
     composes: centerVertically from "./helpers.module.css";
     composes: transparentBackground from "./project_globals.module.css";
     width: 60%;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -36,6 +41,7 @@
     composes: textInput;
     position: relative;
     width: 94%;
+    resize: vertical;
 }
 
 .buttonContainer {
