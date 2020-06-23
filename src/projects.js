@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './projects.module.css';
-import placeholder from './images/placeholder-square.jpeg'
+import Calculator from './images/Javascript Calculator.png'
+import Pomodoro from './images/Pomodoro Clock.png'
+import Quote from './images/QuoteGenerator.png'
+import SimonSays from './images/Simon Says.png'
 
 class ProjectBox extends React.Component {
     constructor(props) {
@@ -10,8 +13,7 @@ class ProjectBox extends React.Component {
         }
         this.toggleHover = this.toggleHover.bind(this);
         this.noHover = this.noHover.bind(this);
-
-
+        this.clickLink = this.clickLink.bind(this);
     }
 
     toggleHover() {
@@ -24,6 +26,17 @@ class ProjectBox extends React.Component {
         this.setState({
             hover: false,
         })
+    }
+
+    clickLink() {
+        if (this.state.hover) {
+            window.location.href = this.props.link;
+        } else {
+            this.setState({
+                hover: !this.state.hover,
+            })
+        }
+
     }
 
     render() {
@@ -40,7 +53,7 @@ class ProjectBox extends React.Component {
             <div className={styles.container}
             onMouseEnter={this.toggleHover}
             onMouseLeave={this.noHover}
-            onClick={this.toggleHover}
+            onClick={this.clickLink}
             >
                 <img
                     className={styles.image}
@@ -71,39 +84,31 @@ function getBoxes() {
     var boxes = [];
     boxes.push(<ProjectBox
         key="1"
-        image={placeholder}
-        imageDescription="This is a placeholder image"
-        description="A placeholder app"
+        image={Calculator}
+        imageDescription="Javascript Calculator"
+        description="A basic calculator web app"
+        link="https://codepen.io/BrandonMurch/full/geWdda"
     />);
     boxes.push(<ProjectBox
         key="2"
-        image={placeholder}
-        imageDescription="This is a placeholder image"
-        description="A placeholder app"
+        image={Pomodoro}
+        imageDescription="Pomodoro Clock"
+        description="A timer to improve your productivity"
+        link="https://codepen.io/BrandonMurch/full/RMZLab"
     />);
     boxes.push(<ProjectBox
         key="3"
-        image={placeholder}
-        imageDescription="This is a placeholder image"
-        description="A placeholder app"
+        image={Quote}
+        imageDescription="Quote Generator"
+        description="A random quote generator"
+        link="https://codepen.io/BrandonMurch/full/vRBZVY/"
     />);
     boxes.push(<ProjectBox
         key="4"
-        image={placeholder}
-        imageDescription="This is a placeholder image"
-        description="A placeholder app"
-    />);
-    boxes.push(<ProjectBox
-        key="4"
-        image={placeholder}
-        imageDescription="This is a placeholder image"
-        description="A placeholder app"
-    />);
-    boxes.push(<ProjectBox
-        key="4"
-        image={placeholder}
-        imageDescription="This is a placeholder image"
-        description="A placeholder app"
+        image={SimonSays}
+        imageDescription="Simon Says"
+        description="A virtual game of simon says, complete with hard mode!"
+        link="https://codepen.io/BrandonMurch/full/YaErGR/"
     />);
 
     return boxes;

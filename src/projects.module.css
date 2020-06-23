@@ -24,6 +24,7 @@
     position: relative;
     margin: 1rem;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .image {
