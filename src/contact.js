@@ -13,7 +13,7 @@ class Contact extends React.Component {
                         <textarea className={styles.textArea} id="message" name="message" required/>
                     </div>
                     <div className={styles.buttonContainer}>
-                        <input className={styles.submit}  type="submit" value="Submit" />
+                        <input className={styles.submit}  type="submit" value="Submit" disabled />
                     </div>
                 </form>
             </section>
