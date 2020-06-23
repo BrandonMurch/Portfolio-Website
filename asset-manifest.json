@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/build/static/css/main.c32a8539.chunk.css",
-    "main.js": "/build/static/js/main.b255d857.chunk.js",
-    "main.js.map": "/build/static/js/main.b255d857.chunk.js.map",
-    "runtime-main.js": "/build/static/js/runtime-main.9214d4e0.js",
-    "runtime-main.js.map": "/build/static/js/runtime-main.9214d4e0.js.map",
-    "static/js/2.c323d2f9.chunk.js": "/build/static/js/2.c323d2f9.chunk.js",
-    "static/js/2.c323d2f9.chunk.js.map": "/build/static/js/2.c323d2f9.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.bfc45f9e8b530c199c81faaccb84f9c7.js": "/precache-manifest.bfc45f9e8b530c199c81faaccb84f9c7.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.c32a8539.chunk.css.map": "/build/static/css/main.c32a8539.chunk.css.map",
-    "static/js/2.c323d2f9.chunk.js.LICENSE.txt": "/build/static/js/2.c323d2f9.chunk.js.LICENSE.txt"
+    "main.css": "/build/static/css/main.917253fa.chunk.css",
+    "main.js": "/build/static/js/main.2584c0c4.chunk.js",
+    "main.js.map": "/build/static/js/main.2584c0c4.chunk.js.map",
+    "runtime-main.js": "/build/static/js/runtime-main.10f07595.js",
+    "runtime-main.js.map": "/build/static/js/runtime-main.10f07595.js.map",
+    "static/js/2.6be7ab6c.chunk.js": "/build/static/js/2.6be7ab6c.chunk.js",
+    "static/js/2.6be7ab6c.chunk.js.map": "/build/static/js/2.6be7ab6c.chunk.js.map",
+    "index.html": "/build/index.html",
+    "precache-manifest.0415e67a4ab532c835c1a2c1e9f56c99.js": "/build/precache-manifest.0415e67a4ab532c835c1a2c1e9f56c99.js",
+    "service-worker.js": "/build/service-worker.js",
+    "static/css/main.917253fa.chunk.css.map": "/build/static/css/main.917253fa.chunk.css.map",
+    "static/js/2.6be7ab6c.chunk.js.LICENSE.txt": "/build/static/js/2.6be7ab6c.chunk.js.LICENSE.txt",
+    "static/media/Javascript Calculator.png": "/build/static/media/Javascript Calculator.11eea593.png",
+    "static/media/about_me.module.css": "/build/static/media/Personal_Photo_gradient.a8965fe2.jpg",
+    "static/media/Pomodoro Clock.png": "/build/static/media/Pomodoro Clock.91e82ee1.png",
+    "static/media/QuoteGenerator.png": "/build/static/media/QuoteGenerator.ae1af67d.png",
+    "static/media/Simon Says.png": "/build/static/media/Simon Says.824f8052.png",
+    "static/media/experience.module.css": "/build/static/media/amalficoast.f1464491.jpeg",
+    "static/media/projects.module.css": "/build/static/media/hillsborough.17a749f3.jpeg",
+    "static/media/contact.module.css": "/build/static/media/mtwellington.4ee99489.jpeg"
   },
   "entrypoints": [
-    "/buildstatic/js/runtime-main.9214d4e0.js",
-    "/buildstatic/js/2.c323d2f9.chunk.js",
-    "/buildstatic/css/main.c32a8539.chunk.css",
-    "/buildstatic/js/main.b255d857.chunk.js"
+    "static/js/runtime-main.10f07595.js",
+    "static/js/2.6be7ab6c.chunk.js",
+    "static/css/main.917253fa.chunk.css",
+    "static/js/main.2584c0c4.chunk.js"
   ]
 }
