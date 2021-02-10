@@ -55,9 +55,9 @@ function getPages() {
     var pages = [];
     pages.push(
         <NavBarItem
-            name={"About Me"}
+            name={"Home"}
             logo={null}
-            location={"/about-me"}
+            location={"/"}
             index={0}
         />
     );
@@ -75,14 +75,6 @@ function getPages() {
             logo={null}
             location={"/experience"}
             index={2}
-        />
-    );
-    pages.push(
-        <NavBarItem
-            name={"Contact"}
-            logo={null}
-            location={"/contact"}
-            index={3}
         />
     );
     return pages;

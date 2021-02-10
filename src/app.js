@@ -39,9 +39,6 @@ class App extends React.Component {
                 <div className={styles.app}>
                     <NavBar />
                     <Switch>
-                        <Route path="/about">
-                            <About state={this.state} />
-                        </Route>
                         <Route path="/contact">
                             <Contact state={this.state} />
                         </Route>
