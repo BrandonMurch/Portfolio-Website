@@ -77,14 +77,6 @@ function getPages() {
             index={2}
         />
     );
-    pages.push(
-        <NavBarItem
-            name={"Contact"}
-            logo={null}
-            location={"/contact"}
-            index={3}
-        />
-    );
     return pages;
 }
 
