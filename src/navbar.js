@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './navbar.module.css';
 
 //media
@@ -8,10 +8,10 @@ import LinkedInLogo from './logos/Linkedin_Logo.png';
 
 
 class NavBar extends React.Component {
-    getLinks(pages, onLeft) {
+    getInternalLinks(pages) {
         const items = pages.map(page => {
             const props = page.props;
-            const display = props.logo ? <img className={styles.image} src={props.logo} alt={props.name}/> : props.name;
+            const display = props.logo ? <img className={styles.image} src={props.logo} alt={props.name} /> : props.name;
             return (
                 <li key={props.index} className={styles.item}>
                     <Link className={styles.link} to={props.location}>
@@ -20,8 +20,22 @@ class NavBar extends React.Component {
                 </li>
             )
         });
-        const navBarSide = onLeft ? styles.leftSide : styles.rightSide
-        return <div className={navBarSide}>{items}</div>
+        return <div className={styles.leftSide}>{items}</div>
+    }
+
+    getExternalLinks(pages) {
+        const items = pages.map(page => {
+            const props = page.props;
+            const display = props.logo ? <img className={styles.image} src={props.logo} alt={props.name} /> : props.name;
+            return (
+                <li key={props.index} className={styles.item}>
+                    <a className={styles.link} href={props.location}>
+                        {display}
+                    </a>
+                </li>
+            )
+        });
+        return <div className={styles.rightSide}>{items}</div>
     }
 
     render() {
@@ -31,8 +45,8 @@ class NavBar extends React.Component {
         return (
             <section className={styles.navbar}>
                 <ul className={styles.list}>
-                    {this.getLinks(pages,true)}
-                    {this.getLinks(social, false)}
+                    {this.getInternalLinks(pages)}
+                    {this.getExternalLinks(social)}
                 </ul>
             </section>
         )
@@ -98,7 +112,7 @@ function getSocials() {
             index={1}
         />
     );
-return socials;
+    return socials;
 }
 
 export default NavBar;
