@@ -38,9 +38,7 @@ class ProjectBox extends React.Component {
         }
 
     }
-
     render() {
-
         var descriptionContainer;
         if (this.state.hover) {
             descriptionContainer = styles.descriptionContainerHover;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './navbar.module.css';
+import { withRouter } from 'react-router';
 
 //media
 import GithugLogo from './logos/Github_Logo.png';
@@ -8,6 +9,8 @@ import LinkedInLogo from './logos/Linkedin_Logo.png';
 
 
 class NavBar extends React.Component {
+
+
     getInternalLinks(pages) {
         const items = pages.map(page => {
             const props = page.props;
@@ -39,6 +42,9 @@ class NavBar extends React.Component {
     }
 
     render() {
+        const { location } = this.props;
+        console.log(location);
+
         const pages = getPages();
         const social = getSocials();
 
@@ -115,4 +121,4 @@ function getSocials() {
     return socials;
 }
 
-export default NavBar;
+export default withRouter(NavBar);
