@@ -51,9 +51,9 @@ class ProjectBox extends React.Component {
 
         return (
             <div className={styles.container}
-            onMouseEnter={this.toggleHover}
-            onMouseLeave={this.noHover}
-            onClick={this.clickLink}
+                onMouseEnter={this.toggleHover}
+                onMouseLeave={this.noHover}
+                onClick={this.clickLink}
             >
                 <img
                     className={styles.image}
@@ -87,7 +87,7 @@ function getBoxes() {
         image={Calculator}
         imageDescription="Javascript Calculator"
         description="A basic calculator web app"
-        link="https://codepen.io/BrandonMurch/full/geWdda"
+        link="https://www.brandonmurch.com/Javascript-Calculator"
     />);
     boxes.push(<ProjectBox
         key="2"
