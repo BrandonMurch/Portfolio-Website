@@ -1,58 +1,60 @@
 .navbar {
-    composes: transparentBackground from "./project_globals.module.css";
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    height: 4rem;
-    width: 100%;
+	composes: transparentBackground from "./project_globals.module.css";
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	height: 4rem;
+	width: 100%;
+}
+
+.transparentNavBar {
+	composes: navbar;
+	background: transparent;
 }
 
 .list {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .group {
-    position: fixed;
-    display: inline;
+	position: fixed;
+	display: inline;
 }
 
 .item {
-    display: inline;
-    padding-top: 0.8em;
-
+	display: inline;
+	padding-top: 0.8em;
 }
 
 .leftSide {
-    composes: group;
-    left: 0;
-    margin-top: 0.5em;
+	composes: group;
+	left: 0;
+	margin-top: 0.5em;
 }
 
 .rightSide {
-    composes: group;
-    right: 0;
+	composes: group;
+	right: 0;
 }
 
 .link {
-    composes: text from "./project_globals.module.css";
-    display: inline;
-    text-decoration: none;
-    padding:0.5em;
-    text-transform: lowercase;
-
+	composes: text from "./project_globals.module.css";
+	display: inline;
+	text-decoration: none;
+	padding: 0.5em;
+	text-transform: lowercase;
 }
 
 .link:hover {
-    color: white;
-    text-decoration: underline;
+	color: white;
+	text-decoration: underline;
 }
 
-
 .image {
-    height: 1.5em;
-    margin-top: 0.4em;
+	height: 1.5em;
+	margin-top: 0.4em;
 }
 
 .image:hover {
-    filter: invert(100%);
+	filter: invert(100%);
 }

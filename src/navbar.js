@@ -43,13 +43,15 @@ class NavBar extends React.Component {
 
     render() {
         const { location } = this.props;
-        console.log(location);
 
         const pages = getPages();
         const social = getSocials();
 
         return (
-            <section className={styles.navbar}>
+            <section className={location.pathname === "/"
+                || location.pathname === "/index.html"
+                ? styles.transparentNavBar
+                : styles.navbar}>
                 <ul className={styles.list}>
                     {this.getInternalLinks(pages)}
                     {this.getExternalLinks(social)}
