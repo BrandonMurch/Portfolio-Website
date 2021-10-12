@@ -4,6 +4,7 @@ import Calculator from './images/Javascript Calculator.png'
 import Pomodoro from './images/Pomodoro Clock.png'
 import Quote from './images/QuoteGenerator.png'
 import SimonSays from './images/Simon Says.png'
+import tend from './images/tend.png'
 
 class ProjectBox extends React.Component {
     constructor(props) {
@@ -80,29 +81,36 @@ class Projects extends React.Component {
 
 function getBoxes() {
     var boxes = [];
-    boxes.push(<ProjectBox
+        boxes.push(<ProjectBox
         key="1"
+        image={tend}
+        imageDescription="tend"
+        description="A social media website for plant enthusiasts"
+        link="https://tend.brandonmurch.com"
+    />);
+    boxes.push(<ProjectBox
+        key="2"
         image={Calculator}
         imageDescription="Javascript Calculator"
         description="A basic calculator web app"
         link="https://www.brandonmurch.com/Javascript-Calculator"
     />);
     boxes.push(<ProjectBox
-        key="2"
+        key="3"
         image={Pomodoro}
         imageDescription="Pomodoro Clock"
         description="A timer to improve your productivity"
         link="https://codepen.io/BrandonMurch/full/RMZLab"
     />);
     boxes.push(<ProjectBox
-        key="3"
+        key="4"
         image={Quote}
         imageDescription="Quote Generator"
         description="A random quote generator"
         link="https://codepen.io/BrandonMurch/full/vRBZVY/"
     />);
     boxes.push(<ProjectBox
-        key="4"
+        key="5"
         image={SimonSays}
         imageDescription="Simon Says"
         description="A virtual game of simon says, complete with hard mode!"
