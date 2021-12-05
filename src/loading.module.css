@@ -1,0 +1,33 @@
+.ring {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background: -webkit-linear-gradient(bottom left, #43cea2 0%, #185a9d 100%);
+}
+
+.background{
+  background: #555;
+  width:95px;
+  height: 95px;
+  border-radius: 100%;
+}
+
+.spinningContainer {
+    animation: spinner 1s linear infinite;
+    width:100px;
+    height: 100px;
+}
+
+
+
+ @keyframes spinner {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% { 
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(810deg);
+    }
+}
