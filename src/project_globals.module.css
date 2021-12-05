@@ -1,7 +1,12 @@
+@font-face {
+    font-family: "montserrat";
+    src: url(fonts/Montserrat-Regular.otf) format("opentype");
+}
+
 .text {
-    font: sans-serif;
+    font-family: "montserrat", sans-serif;
     color: white;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     font-weight: 600;
 }
 
