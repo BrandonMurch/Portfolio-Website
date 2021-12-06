@@ -1,18 +1,15 @@
 .background {
     composes: backgroundImage from "./project_globals.module.css";
-    background-image: url(images/Personal_Photo_cropped.jpg);
-    background-position: center;
+    background-position: top left;
 }
 
-.aboutMe {
-    composes: background;
-}
-
-@media screen and (orientation: landscape) {
+@media screen and (orientation: portrait) {
     .background {
-        composes: backgroundImage from "./project_globals.module.css";
-        background-image: url(images/Personal_Photo_gradient.jpg);
-        background-position: left top;
+        background-position: center;
+    }
+
+    .container {
+        width: 100vw;
     }
 }
 
@@ -35,3 +32,5 @@
     composes: text from "./project_globals.module.css";
     font-size: 1.5rem;
 }
+
+
