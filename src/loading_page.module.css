@@ -17,7 +17,7 @@
     composes: text from "./project_globals.module.css";
     color: #DDD;
     text-align: center;
-    font-size: 9vw;
+    font-size: 4rem;
     margin: 0;
 }
 
