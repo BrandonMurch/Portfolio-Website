@@ -32,7 +32,7 @@ function AboutMe() {
             <Loading/>
         </div>
 
-            <section hidden={!loaded} className={styles.background} style={{ backgroundImage:'url(' + backgroundSource + ')'}}>
+        <section hidden={!loaded} className={styles.background} style={{ backgroundImage:'url(' + backgroundSource + ')'}}>
             <div className={styles.container}>
                 <h1 className={styles.title}> brandon murch </h1>
                 <h3 className={styles.subtitle}> {aboutMe} </h3>
