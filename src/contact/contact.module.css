@@ -41,9 +41,15 @@
 
 }
 
+.submitted .textInput:invalid {
+    border-bottom: 2px solid red;
+}
+
+
 .textInput:focus {
     border-bottom: 2px solid #43cea2;
 }
+
 
 .textArea {
     composes: textInput;
