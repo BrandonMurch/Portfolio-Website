@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef } from 'react';
 import styles from './contact.module.css';
 import usePreloadImage from '../hooks/usePreloadImage';
 import Loading from '../loading_page';
@@ -6,6 +6,7 @@ import Loading from '../loading_page';
 function Contact() {
     const backgroundSource = "../images/mtwellington.jpeg";
     const [submitted, setSubmitted] = useState(false);
+    const submitButton = useRef();
     const loaded = usePreloadImage(backgroundSource);
     const defaultValues = {
         name: "",
@@ -30,12 +31,14 @@ function Contact() {
   }
 
     function handleSubmit(event) {
+        submitButton.current.disabled = true;
         fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...formContent })
       })
         .then((response) => {
+            submitButton.current.disabled = false;
             if (response.status === 200) {
                 alert("Success!");
             }
@@ -83,7 +86,7 @@ function Contact() {
                     <textarea className={styles.textArea} id="message" name="message" onChange={handleChange} required/>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <input className={styles.submit}  type="submit" value="Submit" onClick={() => setSubmitted(true)}/>
+                    <input className={styles.submit}  type="submit" value="Submit" ref={submitButton} onClick={() => setSubmitted(true)}/>
                 </div>
             </form>
         </section>
