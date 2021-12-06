@@ -4,8 +4,9 @@ import styles from './navbar.module.css';
 import { withRouter } from 'react-router';
 
 //media
-import GithugLogo from './logos/Github_Logo.png';
-import LinkedInLogo from './logos/Linkedin_Logo.png';
+import GithubLogo from './github_icon';
+// import GithugLogo from './logos/Github_Logo.png';
+import LinkedInLogo from './linkedin_icon';
 
 
 class NavBar extends React.Component {
@@ -29,11 +30,12 @@ class NavBar extends React.Component {
     getExternalLinks(pages) {
         const items = pages.map(page => {
             const props = page.props;
-            const display = props.logo ? <img className={styles.image} src={props.logo} alt={props.name} /> : props.name;
+            const Display = props.logo;
+            // const display = props.logo ? <img className={styles.image} src={props.logo} alt={props.name} /> : props.name;
             return (
                 <li key={props.index} className={styles.item}>
                     <a className={styles.link} href={props.location}>
-                        {display}
+                        <Display />
                     </a>
                 </li>
             )
@@ -107,7 +109,7 @@ function getSocials() {
     socials.push(
         <NavBarItem
             name={"Github"}
-            logo={GithugLogo}
+            logo={GithubLogo}
             location={"https://www.github.com/BrandonMurch"}
             index={0}
         />

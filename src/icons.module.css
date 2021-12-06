@@ -1,0 +1,23 @@
+.icon {
+    fill: #EEE;
+    fill-opacity:1;
+    fill-rule:evenodd;
+    stroke:none;
+}
+
+.iconContainer {
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+}
+
+.iconContainer:hover {
+    transform: scale(1.2);
+}
+
+.iconContainer:hover .icon {
+    fill: #43cea2;
+}
+
