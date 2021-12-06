@@ -10,16 +10,22 @@ import Loading from './loading_page';
 
 function preloadImage(backgroundSource, setLoaded){
     const backgroundImage = new Image();
-    backgroundImage.onloadend = () => setLoaded(true);
+    backgroundImage.onloadend = () => {
+        // Store image in window object to encourage some browsers to cache the image, and use it to prevent loading screen
+        window[backgroundSource] = backgroundImage;
+        setLoaded(true);
+    };
     backgroundImage.src = backgroundSource;
-    window[backgroundSource] = backgroundImage;
 }
 
 function AboutMe() {
-    const [loaded, setLoaded] = useState(false);
-    const aboutMe = "a software developer living in tasmania.";
     const backgroundSource = window.innerHeight > window.innerWidth ? "images/Personal_Photo_cropped.jpg" : "images/Personal_Photo_gradient.jpg"
+    const [loaded, setLoaded] = useState(window[backgroundSource] !== undefined);
+    const aboutMe = "a software developer living in tasmania.";
     
+    console.log(window[backgroundSource])
+    console.log(loaded);
+
     if (!loaded) {
         preloadImage(backgroundSource, setLoaded);
     }
