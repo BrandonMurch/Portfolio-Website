@@ -1,6 +1,6 @@
 .background {
-    composes: backgroundImage from "./project_globals.module.css";
-    background-image: url(images/hillsborough.jpeg);
+    composes: backgroundImage from "../project_globals.module.css";
+    background-image: url(../images/hillsborough.jpeg);
     background-position: center;
 }
 .projects {
@@ -54,12 +54,12 @@
 
 .descriptionContainerHover {
     composes: descriptionContainer;
-    composes: transparentBackground from "./project_globals.module.css";
+    composes: transparentBackground from "../project_globals.module.css";
     opacity: 1;
     transition: opacity .5s;
 }
 
 .description {
-    composes: text from "./project_globals.module.css";
+    composes: text from "../project_globals.module.css";
     padding: 1rem 2rem;
 }

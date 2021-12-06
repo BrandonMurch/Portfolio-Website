@@ -1,5 +1,5 @@
 .navbar {
-	composes: transparentBackground from "./project_globals.module.css";
+	composes: transparentBackground from "../project_globals.module.css";
 	margin: 0;
 	padding: 0;
 	position: fixed;
@@ -39,7 +39,7 @@
 }
 
 .link {
-	composes: text from "./project_globals.module.css";
+	composes: text from "../project_globals.module.css";
 	display: inline;
 	text-decoration: none;
 	padding: 0.5em;

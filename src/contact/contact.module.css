@@ -1,6 +1,6 @@
 .background {
-    composes: backgroundImage from "./project_globals.module.css";
-    background-image: url(images/mtwellington.jpeg);
+    composes: backgroundImage from "../project_globals.module.css";
+    background-image: url(../images/mtwellington.jpeg);
     background-position: center;
 }
 
@@ -9,15 +9,15 @@
 }
 
 .contactForm {
-    composes: centerVertically from "./helpers.module.css";
-    composes: transparentBackground from "./project_globals.module.css";
+    composes: centerVertically from "../helpers.module.css";
+    composes: transparentBackground from "../project_globals.module.css";
     width: 60%;
     max-width: 600px;
     margin: 0 auto;
 }
 
 .label {
-    composes: text from "./project_globals.module.css";
+    composes: text from "../project_globals.module.css";
     margin: 0.5rem 0;
 }
 

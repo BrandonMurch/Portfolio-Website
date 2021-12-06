@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './projects.module.css';
-import Calculator from './images/Javascript Calculator.png'
-import Pomodoro from './images/Pomodoro Clock.png'
-import Quote from './images/QuoteGenerator.png'
-import SimonSays from './images/Simon Says.png'
-import tend from './images/tend.png'
+import Calculator from '../images/Javascript Calculator.png'
+import Pomodoro from '../images/Pomodoro Clock.png'
+import Quote from '../images/QuoteGenerator.png'
+import SimonSays from '../images/Simon Says.png'
+import tend from '../images/tend.png'
 
 class ProjectBox extends React.Component {
     constructor(props) {

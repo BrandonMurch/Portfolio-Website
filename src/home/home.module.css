@@ -1,5 +1,5 @@
 .background {
-    composes: backgroundImage from "./project_globals.module.css";
+    composes: backgroundImage from "../project_globals.module.css";
     background-position: top left;
 }
 
@@ -23,13 +23,13 @@
 
 .title {
     margin: auto;
-    composes: text from "./project_globals.module.css";
+    composes: text from "../project_globals.module.css";
     padding: 0.5rem;
     font-size: 4rem;
 }
 
 .subtitle {
-    composes: text from "./project_globals.module.css";
+    composes: text from "../project_globals.module.css";
     font-size: 1.5rem;
 }
 

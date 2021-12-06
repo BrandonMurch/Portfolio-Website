@@ -4,9 +4,8 @@ import styles from './navbar.module.css';
 import { withRouter } from 'react-router';
 
 //media
-import GithubLogo from './github_icon';
-// import GithugLogo from './logos/Github_Logo.png';
-import LinkedInLogo from './linkedin_icon';
+import GithubLogo from '../icons/github_icon';
+import LinkedInLogo from '../icons/linkedin_icon';
 
 
 class NavBar extends React.Component {
@@ -95,9 +94,9 @@ function getPages() {
     );
     pages.push(
         <NavBarItem
-            name={"Experience"}
+            name={"Contact"}
             logo={null}
-            location={"/experience"}
+            location={"/contact"}
             index={2}
         />
     );

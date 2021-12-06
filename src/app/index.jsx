@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import styles from './app.module.css';
-import NavBar from './navbar';
-import About from './about_me';
-import Contact from './contact';
-import Projects from './projects';
-import Experience from './experience';
+import NavBar from '../navbar';
+import Home from '../home';
+import Contact from '../contact';
+import Projects from '../projects';
 
 class App extends React.Component {
     constructor(props) {
@@ -45,11 +44,11 @@ class App extends React.Component {
                         <Route path="/projects">
                             <Projects state={this.state} />
                         </Route>
-                        <Route path="/experience">
-                            <Experience state={this.state} />
+                        <Route path="/contact">
+                            <Contact state={this.state} />
                         </Route>
                         <Route path = "/">
-                            <About state={this.state} />
+                            <Home state={this.state} />
                         </Route>
                     </Switch>
                 </div>

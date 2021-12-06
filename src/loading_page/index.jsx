@@ -1,5 +1,5 @@
 import React from 'react';
-import Loading from './loading';
+import Loading from '../loading_spinner';
 import style from './loading_page.module.css';
 
 

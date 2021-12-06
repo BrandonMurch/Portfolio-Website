@@ -14,7 +14,7 @@
 }
 
 .loadingText{
-    composes: text from "./project_globals.module.css";
+    composes: text from "../project_globals.module.css";
     color: #DDD;
     text-align: center;
     font-size: 4rem;
