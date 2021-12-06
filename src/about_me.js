@@ -23,9 +23,6 @@ function AboutMe() {
     const [loaded, setLoaded] = useState(window[backgroundSource] !== undefined);
     const aboutMe = "a software developer living in tasmania.";
     
-    console.log(window[backgroundSource])
-    console.log(loaded);
-
     if (!loaded) {
         preloadImage(backgroundSource, setLoaded);
     }
