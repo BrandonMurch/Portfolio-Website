@@ -1,82 +1,76 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './projects.module.css';
-import Calculator from '../images/Javascript Calculator.png'
-import Pomodoro from '../images/Pomodoro Clock.png'
-import Quote from '../images/QuoteGenerator.png'
-import SimonSays from '../images/Simon Says.png'
-import tend from '../images/tend.png'
+import Calculator from '../images/Javascript Calculator.jpg';
+import Pomodoro from '../images/Pomodoro Clock.jpg';
+import Quote from '../images/QuoteGenerator.jpg';
+import SimonSays from '../images/Simon Says.jpg';
+import tend from '../images/tend.jpg';
+import {usePreloadImages} from '../hooks/usePreloadImage';
+import Loading from '../loading_page';
 
-class ProjectBox extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            hover: false,
-        }
-        this.toggleHover = this.toggleHover.bind(this);
-        this.noHover = this.noHover.bind(this);
-        this.clickLink = this.clickLink.bind(this);
+function ProjectBox(props) {
+
+    const [hover, setHover] = useState(false);
+
+    function toggleHover() {
+        setHover((previousState) => !previousState);
     }
 
-    toggleHover() {
-        this.setState({
-            hover: !this.state.hover,
-        })
+    function noHover() {
+        setHover(false);
     }
 
-    noHover() {
-        this.setState({
-            hover: false,
-        })
-    }
-
-    clickLink() {
-        if (this.state.hover) {
-            window.location.href = this.props.link;
+    function clickLink() {
+        if (hover) {
+            window.location.href = props.link;
         } else {
-            this.setState({
-                hover: !this.state.hover,
-            })
+            toggleHover();
         }
 
     }
-    render() {
-        var descriptionContainer;
-        if (this.state.hover) {
-            descriptionContainer = styles.descriptionContainerHover;
-        } else {
-            descriptionContainer = styles.descriptionContainer;
-        }
+    var descriptionContainerStyle;
+    if (hover) {
+        descriptionContainerStyle = styles.descriptionContainerHover;
+    } else {
+        descriptionContainerStyle = styles.descriptionContainer;
+    }
 
 
-        return (
-            <div className={styles.container}
-                onMouseEnter={this.toggleHover}
-                onMouseLeave={this.noHover}
-                onClick={this.clickLink}
-            >
-                <img
-                    className={styles.image}
-                    src={this.props.image} alt={this.props.imageDescription} />
-                <div className={descriptionContainer}>
-                    <p className={styles.description}>
-                        {this.props.description}
-                    </p>
-                </div>
+    return (
+        <div className={styles.container}
+            onMouseEnter={toggleHover}
+            onMouseLeave={noHover}
+            onClick={clickLink}
+        >
+            <img
+                className={styles.image}
+                src={props.image} alt={props.imageDescription} />
+            <div className={descriptionContainerStyle}>
+                <p className={styles.description}>
+                    {props.description}
+                </p>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
-class Projects extends React.Component {
-    render() {
-        return (
-            <section className={styles.projects}>
-                <div className={styles.boxesContainer}>
-                    {getBoxes()}
-                </div>
-            </section>
-        )
-    }
+function Projects() {
+
+    const images = [Calculator, Pomodoro, Quote, SimonSays, tend, '../images/hillsborough.jpeg'];
+    const loaded = usePreloadImages(images);
+
+    return (
+        <>
+        <div hidden={loaded}>
+            <Loading />
+        </div>
+        <section className={styles.projects} hidden={!loaded}>
+            <div className={styles.boxesContainer}>
+                {getBoxes()}
+            </div>
+        </section>
+        </>
+    )
 }
 
 function getBoxes() {
