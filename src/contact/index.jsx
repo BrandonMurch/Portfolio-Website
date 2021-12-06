@@ -61,8 +61,6 @@ function Contact() {
             }}
         >
             <form 
-            // form needs to be hidden for netlify forms
-                hidden={process.env.NODE_ENV !== "development"}
                 name="contact"
                 className={
                     styles.contactForm 
