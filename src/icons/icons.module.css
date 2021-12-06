@@ -3,6 +3,7 @@
     fill-opacity:1;
     fill-rule:evenodd;
     stroke:none;
+    transition: all .2s ease-in-out;
 }
 
 .iconContainer {
