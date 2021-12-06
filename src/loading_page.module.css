@@ -15,7 +15,6 @@
 
 .loadingText{
     composes: text from "./project_globals.module.css";
-    font-family: montserrat, sans-serif;
     color: #DDD;
     text-align: center;
     font-size: 9vw;
