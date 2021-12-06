@@ -6,8 +6,7 @@
 
 .text {
     font-family: "montserrat", sans-serif;
-    color: white;
-    /* text-transform: lowercase; */
+    color: #DDD;
     font-weight: 600;
 }
 
