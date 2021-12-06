@@ -1,16 +1,13 @@
-.background {
+.contact {
     composes: backgroundImage from "../project_globals.module.css";
-    background-image: url(../images/mtwellington.jpeg);
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/mtwellington.jpeg); */
     background-position: center;
+    background-size: cover;
 }
 
-.contact {
-    composes: background;
-}
 
 .contactForm {
     composes: centerVertically from "../helpers.module.css";
-    composes: transparentBackground from "../project_globals.module.css";
     width: 60%;
     max-width: 600px;
     margin: 0 auto;
@@ -19,37 +16,68 @@
 .label {
     composes: text from "../project_globals.module.css";
     margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.label::after {
+    content: ":";
 }
 
 .inputGroup {
-    width: 46%;
+    width: 100%;
     padding: 0.5rem;
     display: inline-grid;
 }
 
-.wideGroup {
-    composes: inputGroup;
+.textInput {
+    composes: text from '../project_globals.module.css';
     width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #DDD;
+    outline: none;
+    padding-bottom: 0.5rem;
+    font-size: 1.25rem;
+
 }
 
-.textInput {
-    width: 100%;
-    background-color: #eee;
+.textInput:focus {
+    border-bottom: 2px solid #43cea2;
 }
 
 .textArea {
     composes: textInput;
     position: relative;
-    width: 94%;
+    width: 100%;
     resize: vertical;
 }
 
 .buttonContainer {
     height: 3rem;
-    width: 94%;
+    width: 100%;
     margin: 1rem;
 }
 
 .submit {
+    composes: text from '../project_globals.module.css';
     float: right;
+    background-color: transparent;
+    border: 2px solid #DDD;
+    padding: 0.5rem;
+    color: #DDD;
+    font-size: 1.5rem;
+    cursor:pointer;
+}
+
+.submit:hover {
+    background-color: #43cea2;
+    color: #555;
+    border: 2px solid #555;
+}
+
+.submit:hover:disabled {
+    background-color: transparent;
+    border: 2px solid #DDD;
+    color: #DDD;
+    cursor:not-allowed;
 }
