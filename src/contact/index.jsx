@@ -45,6 +45,7 @@ function Contact() {
         }).catch(error => alert(error));        
         event.preventDefault();
     }
+
     return (
 
         <>
@@ -60,6 +61,9 @@ function Contact() {
             }}
         >
             <form 
+            // form needs to be hidden for netlify forms
+                hidden={process.env.NODE_ENV !== "development"}
+                name="contact"
                 className={
                     styles.contactForm 
                     + " " 
@@ -67,6 +71,13 @@ function Contact() {
                 }
                 onSubmit={handleSubmit}
             >
+                <input type="hidden" name="form-name" value="contact" />
+                <p hidden>
+                    <label>
+                        This field will stop bots. Don't fill it out.
+                        <input name="bot-field" />
+                    </label>
+                </p>
                 <TextInput name="name" type="text"  autofocus={true} onChange={handleChange}/>
                 <TextInput name="email" type="email" onChange={handleChange} />
                 <div className={styles.inputGroup}>
