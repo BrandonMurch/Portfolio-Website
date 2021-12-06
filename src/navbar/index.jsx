@@ -43,8 +43,6 @@ class NavBar extends React.Component {
     }
 
     render() {
-        const { location } = this.props;
-
         const pages = getPages();
         const social = getSocials();
 
