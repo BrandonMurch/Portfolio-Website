@@ -56,8 +56,7 @@ function Contact() {
             hidden={!loaded} 
             className={styles.contact} 
             style={{ 
-                background:'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(' + backgroundSource + ')', 
-                backgroundSize:'cover'
+                backgroundImage:'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(' + backgroundSource + ')', 
             }}
         >
             <form 
