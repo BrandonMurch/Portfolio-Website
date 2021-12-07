@@ -1,0 +1,17 @@
+.background{
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+    background-attachment: fixed;
+}
+
+.background1 {
+    composes: background;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/amalficoast.jpeg');
+}
+
+.background2 {
+    composes: background;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/hillsborough.jpeg');
+}
