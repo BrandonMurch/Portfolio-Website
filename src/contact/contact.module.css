@@ -2,6 +2,8 @@
     composes: backgroundImage from "../project_globals.module.css";
     background-position: center;
     background-size: cover;
+    position: relative;
+    z-index: 2;
 }
 
 

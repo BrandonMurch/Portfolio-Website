@@ -1,10 +1,12 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import styles from './app.module.css';
 import NavBar from '../navbar';
 import Home from '../home';
+import About from '../about';
 import Contact from '../contact';
 import Projects from '../projects';
+import {Background1, Background2} from '../backgrounds';
 
 class App extends React.Component {
     constructor(props) {
@@ -34,26 +36,15 @@ class App extends React.Component {
 
     render() {
         return (
-            <BrowserRouter>
-                <div className={styles.app}>
-                    <NavBar />
-                    <Switch>
-                        <Route path="/contact">
-                            <Contact state={this.state} />
-                        </Route>
-                        <Route path="/projects">
-                            <Projects state={this.state} />
-                        </Route>
-                        <Route path="/contact">
-                            <Contact state={this.state} />
-                        </Route>
-                        <Route path = "/">
-                            <Home state={this.state} />
-                        </Route>
-                    </Switch>
-                </div>
-            </BrowserRouter>
-
+            <>
+                {/* <NavBar /> */}
+                <Home />
+                <About />
+                <Background1 />
+                <Projects />
+                <Background2 />
+                <Contact />
+            </>
         )
     }
 }

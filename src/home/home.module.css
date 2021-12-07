@@ -1,11 +1,15 @@
 .background {
     composes: backgroundImage from "../project_globals.module.css";
     background-position: top left;
+    position: relative;
+        background-image: url("../images/Personal_Photo_gradient.jpg" );
+    z-index: 2;
 }
 
 @media screen and (orientation: portrait) {
     .background {
         background-position: center;
+        background-image: url("../images/Personal_Photo_cropped.jpg" );
     }
 
     .container {
@@ -14,8 +18,8 @@
 }
 
 .container {
-    position: fixed;
-    bottom: 5vh;
+    position: absolute;
+    top: 80vh;
     right: 0;
     text-align: center;
     padding-bottom: 1em;

@@ -52,12 +52,11 @@ function Contact() {
     return (
 
         <>
-        <div hidden={loaded}>
+        {/* <div hidden={loaded}>
             <Loading/>
-        </div>
+        </div> */}
 
         <section 
-            hidden={!loaded} 
             className={styles.contact} 
             style={{ 
                 backgroundImage:'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(' + backgroundSource + ')', 

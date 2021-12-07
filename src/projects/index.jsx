@@ -56,15 +56,9 @@ function ProjectBox(props) {
 
 function Projects() {
 
-    const images = [Calculator, Pomodoro, Quote, SimonSays, tend, '../images/hillsborough.jpeg'];
-    const loaded = usePreloadImages(images);
-
     return (
         <>
-        <div hidden={loaded}>
-            <Loading />
-        </div>
-        <section className={styles.projects} hidden={!loaded}>
+        <section className={styles.projects}>
             <div className={styles.boxesContainer}>
                 {getBoxes()}
             </div>

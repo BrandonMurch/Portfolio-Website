@@ -23,3 +23,46 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+build/_redirects
+build/asset-manifest.json
+build/index.html
+build/manifest.json
+build/precache-manifest.384375693ce97d2cae41a232f4a47c59.js
+build/service-worker.js
+build/images/mtwellington.jpeg
+build/images/Personal_Photo_cropped.jpg
+build/images/Personal_Photo_gradient.jpg
+build/static/css/main.228cb3b0.chunk.css
+build/static/css/main.228cb3b0.chunk.css.map
+build/static/css/main.db009d52.chunk.css
+build/static/css/main.db009d52.chunk.css.map
+build/static/js/2.1b9312e2.chunk.js
+build/static/js/2.1b9312e2.chunk.js.LICENSE.txt
+build/static/js/2.1b9312e2.chunk.js.map
+build/static/js/2.a643e938.chunk.js
+build/static/js/2.a643e938.chunk.js.LICENSE.txt
+build/static/js/2.a643e938.chunk.js.map
+build/static/js/main.4df57d6f.chunk.js
+build/static/js/main.4df57d6f.chunk.js.map
+build/static/js/main.64ce7178.chunk.js
+build/static/js/main.64ce7178.chunk.js.map
+build/static/js/runtime-main.092d647c.js
+build/static/js/runtime-main.092d647c.js.map
+build/static/js/runtime-main.9214d4e0.js
+build/static/js/runtime-main.9214d4e0.js.map
+build/static/media/amalficoast.f1464491.jpeg
+build/static/media/hillsborough.17a749f3.jpeg
+build/static/media/hillsborough.3009afb3.jpeg
+build/static/media/Javascript Calculator.11eea593.png
+build/static/media/Javascript Calculator.11028339.jpg
+build/static/media/Montserrat-Regular.65bc44fb.otf
+build/static/media/mtwellington.4ee99489.jpeg
+build/static/media/Personal_Photo_cropped.586d5ecc.jpg
+build/static/media/Personal_Photo_gradient.a8965fe2.jpg
+build/static/media/Pomodoro Clock.91e82ee1.png
+build/static/media/Pomodoro Clock.386e20e4.jpg
+build/static/media/QuoteGenerator.9c2e2fd0.jpg
+build/static/media/QuoteGenerator.ae1af67d.png
+build/static/media/Simon Says.86b9217f.jpg
+build/static/media/Simon Says.824f8052.png
+build/static/media/tend.7649d6ea.jpg
