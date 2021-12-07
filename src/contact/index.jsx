@@ -1,13 +1,10 @@
 import React, {useState, useRef } from 'react';
 import styles from './contact.module.css';
-import usePreloadImage from '../hooks/usePreloadImage';
-import Loading from '../loading_page';
 
 function Contact() {
     const backgroundSource = "../images/mtwellington.jpeg";
     const [submitted, setSubmitted] = useState(false);
     const submitButton = useRef();
-    const loaded = usePreloadImage(backgroundSource);
     const defaultValues = {
         name: "",
         email: "",
@@ -78,7 +75,7 @@ function Contact() {
                         <input name="bot-field" />
                     </label>
                 </p>
-                <TextInput name="name" type="text"  autofocus={true} onChange={handleChange}/>
+                <TextInput name="name" type="text" onChange={handleChange}/>
                 <TextInput name="email" type="email" onChange={handleChange} />
                 <div className={styles.inputGroup}>
                     <label className={styles.label}>message</label>
@@ -104,7 +101,7 @@ function TextInput(props) {
                 {props.name}
             </label>
             <br />
-            <input className={styles.textInput} type={props.type}  id={props.name} name={props.name} autoFocus={props.autofocus} onChange={props.onChange} required/>
+            <input className={styles.textInput} type={props.type}  id={props.name} name={props.name} onChange={props.onChange} required/>
         </div>
     )
 }
