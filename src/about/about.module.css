@@ -1,0 +1,18 @@
+.background {
+    background-color: #787575;
+    padding: 3rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.3) ;
+    z-index: 20;
+    position: relative;
+}
+
+.title {
+    composes: text from '../project_globals.module.css';
+    font-size: 5rem;
+}
+
+.body {
+    composes: text from '../project_globals.module.css';
+}
