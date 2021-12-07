@@ -1,30 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.228cb3b0.chunk.css",
-    "main.js": "/static/js/main.4df57d6f.chunk.js",
-    "main.js.map": "/static/js/main.4df57d6f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9214d4e0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9214d4e0.js.map",
-    "static/js/2.1b9312e2.chunk.js": "/static/js/2.1b9312e2.chunk.js",
-    "static/js/2.1b9312e2.chunk.js.map": "/static/js/2.1b9312e2.chunk.js.map",
+    "main.css": "/static/css/main.db009d52.chunk.css",
+    "main.js": "/static/js/main.64ce7178.chunk.js",
+    "main.js.map": "/static/js/main.64ce7178.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.092d647c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.092d647c.js.map",
+    "static/js/2.a643e938.chunk.js": "/static/js/2.a643e938.chunk.js",
+    "static/js/2.a643e938.chunk.js.map": "/static/js/2.a643e938.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.384375693ce97d2cae41a232f4a47c59.js": "/precache-manifest.384375693ce97d2cae41a232f4a47c59.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.228cb3b0.chunk.css.map": "/static/css/main.228cb3b0.chunk.css.map",
-    "static/js/2.1b9312e2.chunk.js.LICENSE.txt": "/static/js/2.1b9312e2.chunk.js.LICENSE.txt",
-    "static/media/Javascript Calculator.png": "/static/media/Javascript Calculator.11eea593.png",
-    "static/media/about_me.module.css": "/static/media/Personal_Photo_gradient.a8965fe2.jpg",
-    "static/media/Pomodoro Clock.png": "/static/media/Pomodoro Clock.91e82ee1.png",
-    "static/media/QuoteGenerator.png": "/static/media/QuoteGenerator.ae1af67d.png",
-    "static/media/Simon Says.png": "/static/media/Simon Says.824f8052.png",
-    "static/media/experience.module.css": "/static/media/amalficoast.f1464491.jpeg",
-    "static/media/projects.module.css": "/static/media/hillsborough.17a749f3.jpeg",
-    "static/media/contact.module.css": "/static/media/mtwellington.4ee99489.jpeg"
+    "static/css/main.db009d52.chunk.css.map": "/static/css/main.db009d52.chunk.css.map",
+    "static/js/2.a643e938.chunk.js.LICENSE.txt": "/static/js/2.a643e938.chunk.js.LICENSE.txt",
+    "static/media/Javascript Calculator.11028339.jpg": "/static/media/Javascript Calculator.11028339.jpg",
+    "static/media/loading_page.module.css": "/static/media/Montserrat-Regular.65bc44fb.otf",
+    "static/media/Pomodoro Clock.386e20e4.jpg": "/static/media/Pomodoro Clock.386e20e4.jpg",
+    "static/media/QuoteGenerator.9c2e2fd0.jpg": "/static/media/QuoteGenerator.9c2e2fd0.jpg",
+    "static/media/Simon Says.86b9217f.jpg": "/static/media/Simon Says.86b9217f.jpg",
+    "static/media/projects.module.css": "/static/media/hillsborough.3009afb3.jpeg",
+    "static/media/tend.7649d6ea.jpg": "/static/media/tend.7649d6ea.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9214d4e0.js",
-    "static/js/2.1b9312e2.chunk.js",
-    "static/css/main.228cb3b0.chunk.css",
-    "static/js/main.4df57d6f.chunk.js"
+    "static/js/runtime-main.092d647c.js",
+    "static/js/2.a643e938.chunk.js",
+    "static/css/main.db009d52.chunk.css",
+    "static/js/main.64ce7178.chunk.js"
   ]
 }
