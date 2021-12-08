@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import styles from "./contact.module.css";
 
 function Contact() {
-	const backgroundSource = "../images/mtwellington.jpeg";
 	const [submitted, setSubmitted] = useState(false);
 	const submitButton = useRef();
 	const defaultValues = {
@@ -58,16 +57,7 @@ function Contact() {
             <Loading/>
         </div> */}
 
-			<section
-				id="contact"
-				className={styles.contact}
-				style={{
-					backgroundImage:
-						"linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(" +
-						backgroundSource +
-						")",
-				}}
-			>
+			<section id="contact" className={styles.contact}>
 				<form
 					name="contact"
 					className={
