@@ -2,7 +2,7 @@
 	composes: backgroundImage from "../project_globals.module.css";
 	background-position: top left;
 	position: relative;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
 		url("../images/Personal_Photo_left2.jpg");
 	z-index: 2;
 }
@@ -27,19 +27,28 @@
 	font-size: 2vw;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
+	.background {
+		background-image: linear-gradient(
+				rgba(0, 0, 0, 0.1),
+				rgba(0, 0, 0, 0.1) 40%,
+				rgba(0, 0, 0, 0.6)
+			),
+			url("../images/Personal_Photo_left2.jpg");
+	}
+
 	.titleContainer {
-		top: 80vh;
+		top: 75vh;
 		width: 100vw;
 		right: 0;
 	}
 
 	.title {
-		font-size: 9vw;
+		font-size: 7vw;
 	}
 
 	.subtitle {
-		font-size: 3.5vw;
+		font-size: 2.5vw;
 		margin: 0;
 	}
 }
@@ -56,4 +65,14 @@
 	text-decoration: underline;
 	font-size: 3rem;
 	margin: 0;
+}
+
+@media screen and (max-width: 801px) {
+	.title {
+		font-size: 9vw;
+	}
+
+	.subtitle {
+		font-size: 3.5vw;
+	}
 }
