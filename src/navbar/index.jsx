@@ -11,7 +11,13 @@ function NavBar() {
 		return pages.map((page) => {
 			return (
 				<li key={page.index} className={styles.item}>
-					<a className={styles.link} href={page.location}>
+					<a
+						className={styles.link}
+						href={page.location}
+						onClick={() => {
+							setIsOpen(false);
+						}}
+					>
 						{page.name}
 					</a>
 				</li>
