@@ -15,10 +15,11 @@ function ProjectBox(props) {
 				<h2 className={styles.projectName}>{props.name}</h2>
 				<p className={styles.description}>{props.description}</p>
 				<LinkButton className={styles.button} link={props.code}>
-					{" "}
-					code{" "}
+					code
 				</LinkButton>
-				<LinkButton link={props.demo}> demo </LinkButton>
+				<LinkButton className={styles.button} link={props.demo}>
+					demo
+				</LinkButton>
 			</div>
 		</div>
 	);

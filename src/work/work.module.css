@@ -13,64 +13,75 @@
 	margin: 0;
 }
 
-.cardContainer {
-	/* width: 75vw; */
-	/* display: flex;
-	flex-wrap: wrap;
-	justify-content: center; */
-}
-
 .card {
 	width: 75vw;
-	height: 26vw;
+	max-width: 700px;
 	border-radius: 20px;
 	background-color: #999;
 	position: relative;
-	margin: 3rem auto;
+	margin: 2rem auto;
+	padding: 1rem;
+	padding-bottom: 2rem;
 	box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.25);
+	display: flex;
+	justify-content: space-between;
+	/* align-content: center; */
+}
+
+.card:nth-child(odd) {
+	flex-direction: row-reverse;
 }
 
 .image {
-	height: 20vw;
-	width: 20vw;
-	position: absolute;
-	top: 3vw;
-	left: 3vw;
-	z-index: 1;
+	max-height: 100%;
+	max-width: 40%;
 	border-radius: 18px;
 	border: 3px solid #787575;
 }
 
-.card:nth-child(odd) .image {
-	left: auto;
-	right: 3vw;
-}
-
 .descriptionContainer {
-	max-width: 50vw;
-	position: absolute;
-	top: 3vw;
-	right: 3vw;
+	display: inline-block;
+	max-width: 60%;
 	text-align: center;
-}
-
-.card:nth-child(odd) .descriptionContainer {
-	left: 3vw;
-	right: auto;
+	height: min-content;
+	margin: auto;
 }
 
 .projectName {
 	composes: text from "../project_globals.module.css";
-	font-size: 3rem;
+	font-size: 2rem;
 	margin: 0;
 }
 
 .description {
 	composes: text from "../project_globals.module.css";
 	padding: 1rem 2rem;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 .button {
 	margin: 2rem;
+}
+
+.cardContainer {
+	max-width: 1800px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+	.card,
+	.card:nth-child(odd) {
+		flex-direction: column;
+	}
+
+	.image {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.button {
+		display: block;
+	}
 }
