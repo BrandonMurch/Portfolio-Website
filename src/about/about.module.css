@@ -1,5 +1,5 @@
 .background {
-	background-image: linear-gradient(35deg, #bbb, #ddd);
+	background-image: linear-gradient(#ddd, #bbb);
 	padding: 2rem;
 	padding-bottom: 3rem;
 	text-align: center;
@@ -8,11 +8,31 @@
 	position: relative;
 }
 
+.boundary {
+	fill: #ddd;
+	width: 106vw;
+	position: absolute;
+	top: 0;
+	left: -3vw;
+	transform: translateY(-90%);
+}
+
+.bottomBoundary {
+	fill: #bbb;
+	width: 106vw;
+	position: absolute;
+	left: -3vw;
+	bottom: 0;
+	/* transform: translateY(100%); */
+	transform: rotate(180deg) translateY(-90%);
+}
+
 .title {
 	composes: text from "../project_globals.module.css";
 	color: #555;
 	font-size: 5rem;
 	margin: 0;
+	margin-bottom: 1rem;
 }
 
 .body {
