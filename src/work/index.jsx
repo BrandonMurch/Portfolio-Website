@@ -13,10 +13,18 @@ function ProjectBox(props) {
 			<div className={styles.descriptionContainer}>
 				<h2 className={styles.projectName}>{props.name}</h2>
 				<p className={styles.description}>{props.description}</p>
-				<LinkButton className={styles.button} link={props.code}>
+				<LinkButton
+					className={styles.button}
+					link={props.code}
+					dark={true}
+				>
 					code
 				</LinkButton>
-				<LinkButton className={styles.button} link={props.demo}>
+				<LinkButton
+					className={styles.button}
+					link={props.demo}
+					dark={true}
+				>
 					demo
 				</LinkButton>
 			</div>

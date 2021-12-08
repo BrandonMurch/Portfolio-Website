@@ -9,6 +9,12 @@
 	border-radius: 10px;
 }
 
+.buttonDark {
+	composes: button;
+	border: 3px solid #555;
+	color: #555;
+}
+
 .button:hover {
 	background-color: #43cea2;
 	color: #555;
@@ -24,5 +30,10 @@
 
 .linkButton {
 	composes: button;
+	text-decoration: none;
+}
+
+.darkLinkButton {
+	composes: buttonDark;
 	text-decoration: none;
 }

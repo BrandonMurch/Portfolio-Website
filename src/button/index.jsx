@@ -10,11 +10,12 @@ function AppButton(props) {
 }
 
 export function LinkButton(props) {
+	const selectedStyle = props.dark
+		? styles.darkLinkButton
+		: styles.linkButton;
+
 	return (
-		<a
-			className={styles.linkButton + " " + props.className}
-			href={props.link}
-		>
+		<a className={selectedStyle + " " + props.className} href={props.link}>
 			{props.children}
 		</a>
 	);
