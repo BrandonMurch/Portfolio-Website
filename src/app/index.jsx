@@ -6,65 +6,27 @@ import Contact from "../contact";
 import Work from "../work";
 import { Background1 } from "../backgrounds";
 import styles from "./app.module.css";
+import { usePreloadImages } from "../hooks/usePreloadImage";
+import getPhotoSources from "./imageLinks";
+import Loading from "../loading_page";
 
-class App extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			orientation: "landscape",
-			size: "large",
-		};
-		this.updateResize = this.updateResize.bind(this);
+function App() {
+	const loaded = usePreloadImages(getPhotoSources());
+
+	if (!loaded) {
+		return <Loading />;
 	}
 
-	componentDidMount() {
-		this.updateResize();
-		window.addEventListener("resize", this.updateResize);
-	}
-
-	componentWillUnmount() {
-		window.removeEventListener("resize", this.updateResize);
-	}
-
-	updateResize() {
-		this.setState({
-			orientation: getOrientation(),
-			size: getSize(),
-		});
-	}
-
-	render() {
-		return (
-			<div className={styles.appWrapper}>
-				<NavBar />
-				<Home />
-				<About />
-				<Background1 />
-				<Work />
-				{/* <Background2 /> */}
-				<Contact />
-			</div>
-		);
-	}
-}
-
-function getOrientation() {
-	if (window.innerHeight > window.innerWidth) {
-		return "portrait";
-	} else {
-		return "landscape";
-	}
-}
-
-function getSize() {
-	const width = window.innerWidth;
-	if (width > 1280) {
-		return "large";
-	} else if (width > 600) {
-		return " medium";
-	} else {
-		return "small";
-	}
+	return (
+		<div className={styles.appWrapper}>
+			<NavBar />
+			<Home />
+			<About />
+			<Background1 />
+			<Work />
+			<Contact />
+		</div>
+	);
 }
 
 export default App;
