@@ -42,7 +42,7 @@ class App extends React.Component {
                 <About />
                 <Background1 />
                 <Projects />
-                <Background2 />
+                {/* <Background2 /> */}
                 <Contact />
             </>
         )
