@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./work.module.css";
 import Calculator from "../images/Javascript Calculator.jpg";
-import Pomodoro from "../images/Pomodoro Clock.jpg";
 import Quote from "../images/QuoteGenerator.jpg";
 import SimonSays from "../images/Simon Says.jpg";
 import tend from "../images/tend.jpg";
@@ -43,7 +42,7 @@ function getBoxes() {
 			image={tend}
 			name="tend"
 			description="A social media website for plant enthusiasts"
-			code="https://tend.brandonmurch.com"
+			code="https://github.com/BrandonMurch/tend"
 			demo="https://tend.brandonmurch.com"
 		/>,
 		<ProjectBox
@@ -51,23 +50,15 @@ function getBoxes() {
 			image={Calculator}
 			name="Javascript Calculator"
 			description="A basic calculator web app"
-			code="https://www.brandonmurch.com/Javascript-Calculator"
+			code="https://github.com/BrandonMurch/Javascript-Calculator"
 			demo="https://www.brandonmurch.com/Javascript-Calculator"
-		/>,
-		<ProjectBox
-			key="3"
-			image={Pomodoro}
-			name="Pomodoro Clock"
-			description="A timer to improve your productivity"
-			code="https://codepen.io/BrandonMurch/full/RMZLab"
-			demo="https://codepen.io/BrandonMurch/full/RMZLab"
 		/>,
 		<ProjectBox
 			key="4"
 			image={Quote}
 			name="Quote Generator"
 			description="A random quote generator"
-			code="https://codepen.io/BrandonMurch/full/vRBZVY/"
+			code="https://github.com/BrandonMurch/Quote-Generator"
 			demo="https://codepen.io/BrandonMurch/full/vRBZVY/"
 		/>,
 		<ProjectBox
@@ -75,7 +66,7 @@ function getBoxes() {
 			image={SimonSays}
 			name="Simon Says"
 			description="A virtual game of simon says, complete with hard mode!"
-			code="https://codepen.io/BrandonMurch/full/YaErGR/"
+			code="https://github.com/BrandonMurch/Simon-Game"
 			demo="https://codepen.io/BrandonMurch/full/YaErGR/"
 		/>,
 	];

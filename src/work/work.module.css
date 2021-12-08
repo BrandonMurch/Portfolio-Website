@@ -25,7 +25,6 @@
 	box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.25);
 	display: flex;
 	justify-content: space-between;
-	/* align-content: center; */
 }
 
 .card:nth-child(odd) {
@@ -70,6 +69,7 @@
 	flex-wrap: wrap;
 }
 
+/* Switch to cards containing the image on top, and the description underneath for smaller screens. */
 @media screen and (max-width: 500px) {
 	.card,
 	.card:nth-child(odd) {
