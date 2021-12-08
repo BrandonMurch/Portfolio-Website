@@ -6,7 +6,6 @@ import styles from './home.module.css';
 
 // Components
 import Logo from './logo'
-import SocialLinks from '../icons';
 
 function AboutMe() {
     const aboutMe = "a software developer living in tasmania.";
@@ -15,7 +14,6 @@ function AboutMe() {
     return (
         <>
         <Logo />
-        <SocialLinks />
 
         <section  className={styles.background}>
             <div className={styles.titleContainer}>
@@ -25,8 +23,6 @@ function AboutMe() {
         </section>
         </>
     )
-
 }
-
 
 export default AboutMe;

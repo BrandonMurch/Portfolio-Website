@@ -1,35 +1,23 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .navbar {
-	margin: 0;
-	padding: 0;
-	position: fixed;
-	height: 4rem;
+	position: absolute;
+	right: 20px;
+	top: 20px;
 	width: 100%;
+	z-index: 3;
 }
 
 .list {
 	list-style-type: none;
 }
 
-.group {
-	position: fixed;
-	display: inline;
-}
-
 .item {
-	display: inline;
+	float: right;
 	padding-top: 0.8em;
-}
-
-.leftSide {
-	composes: group;
-	left: 0;
-	margin-top: 0.5em;
-	font-size: 1.5rem;
-}
-
-.rightSide {
-	composes: group;
-	right: 0;
+	cursor: pointer;
 }
 
 .link {
@@ -43,18 +31,11 @@
 	letter-spacing: 0.1em;
 	text-shadow: none;
 	transition: all .3s ease-in-out;
+	height: 5rem;
 }
 
 .link:hover {
 	color: #43cea2;
 	text-shadow: 0 0 .9px #43cea2, 0 0 .9px #43cea2, 0 0 .9px #43cea2;
-}
-
-.image {
-	height: 1.5em;
-	margin-top: 0.4em;
-}
-
-.image:hover {
-	filter: invert(100%);
+	font-size: 1.55rem;
 }

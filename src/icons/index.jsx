@@ -6,7 +6,7 @@ import styles from './icons.module.css';
 
 
 function SocialLinks() {
-        const items = getSocials().map(social => {
+        return getSocials().map(social => {
             const Display = social.logo;
             return (
                 <li key={social.index} className={styles.item}>
@@ -16,7 +16,6 @@ function SocialLinks() {
                 </li>
             )
         });
-        return <ul className={styles.rightSide}>{items}</ul>
     }
 
 function getSocials() {

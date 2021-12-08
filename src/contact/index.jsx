@@ -54,6 +54,7 @@ function Contact() {
         </div> */}
 
         <section 
+            id="contact"
             className={styles.contact} 
             style={{ 
                 backgroundImage:'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(' + backgroundSource + ')', 

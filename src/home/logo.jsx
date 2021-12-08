@@ -4,7 +4,7 @@ import styles from './home.module.css'
 function Logo() {
     return ( 
         <div className={styles.logoContainer}>
-            <h1 className={styles.logoText}>bm</h1>
+            <a className={styles.logoText} href="/#">bm</a>
         </div>
      );
 }

@@ -2,15 +2,11 @@
     composes: backgroundImage from "../project_globals.module.css";
     background-position: top left;
     position: relative;
-    background-image:  url("../images/Personal_Photo_left2.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/Personal_Photo_left2.jpg");
     z-index: 2;
 }
 
 @media screen and (orientation: portrait) {
-    .background {
-        background-position: center;
-        background-image: url("../images/Personal_Photo_cropped.jpg" );
-    }
 
     .container {
         width: 100vw;

@@ -1,12 +1,10 @@
 import React from 'react';
-// import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import styles from './app.module.css';
 import NavBar from '../navbar';
 import Home from '../home';
 import About from '../about';
 import Contact from '../contact';
 import Projects from '../projects';
-import {Background1, Background2} from '../backgrounds';
+import {Background1} from '../backgrounds';
 
 class App extends React.Component {
     constructor(props) {
@@ -37,7 +35,7 @@ class App extends React.Component {
     render() {
         return (
             <>
-                {/* <NavBar /> */}
+                <NavBar />
                 <Home />
                 <About />
                 <Background1 />

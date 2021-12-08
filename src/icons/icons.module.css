@@ -1,17 +1,3 @@
-.item {
-	display: inline;
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-.rightSide {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 3;
-}
-
-
 .icon {
     fill: #EEE;
     fill-opacity:1;
@@ -21,11 +7,12 @@
 }
 
 .iconContainer {
+    float: right;
     cursor: pointer;
     width: 2.5rem;
     height: 2.5rem;
     transition: all .2s ease-in-out;
-    display: inline-block;
+    margin: 0 0.5rem;
 }
 
 .iconContainer:hover {

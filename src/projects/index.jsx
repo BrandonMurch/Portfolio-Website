@@ -5,8 +5,6 @@ import Pomodoro from '../images/Pomodoro Clock.jpg';
 import Quote from '../images/QuoteGenerator.jpg';
 import SimonSays from '../images/Simon Says.jpg';
 import tend from '../images/tend.jpg';
-import {usePreloadImages} from '../hooks/usePreloadImage';
-import Loading from '../loading_page';
 
 function ProjectBox(props) {
 
@@ -58,7 +56,7 @@ function Projects() {
 
     return (
         <>
-        <section className={styles.projects}>
+        <section className={styles.projects} id="projects">
             <div className={styles.boxesContainer}>
                 {getBoxes()}
             </div>
