@@ -4,6 +4,8 @@
 	fill-rule: evenodd;
 	stroke: none;
 	transition: all 0.2s ease-in-out;
+	transition: opacity 0.25s 0.25s ease-in-out;
+	position: absolute;
 }
 
 .iconContainer {
@@ -20,4 +22,9 @@
 
 .iconContainer:hover .icon {
 	fill: #43cea2;
+}
+
+.hiddenIcon {
+	opacity: 0;
+	transition: opacity 0.25s 0s ease-in-out;
 }

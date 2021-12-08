@@ -60,7 +60,7 @@ html {
 	.navbarToggle {
 		display: inline-block;
 		position: absolute;
-		right: 40px;
+		right: 90px;
 		top: 20px;
 		z-index: 20;
 	}
