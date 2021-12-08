@@ -14,7 +14,7 @@
 	position: absolute;
 	top: 0;
 	left: -3vw;
-	transform: translateY(-90%);
+	transform: translateY(-90%) scaleX(-1);
 }
 
 .bottomBoundary {
@@ -24,7 +24,7 @@
 	left: -3vw;
 	bottom: 0;
 	/* transform: translateY(100%); */
-	transform: rotate(180deg) translateY(-90%);
+	transform: rotate(180deg) translateY(-90%) scaleX(-1);
 }
 
 .title {
