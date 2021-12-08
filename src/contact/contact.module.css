@@ -1,5 +1,7 @@
 .contact {
 	composes: backgroundImage from "../project_globals.module.css";
+	height: auto;
+	min-height: 100vh;
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -10,10 +12,19 @@
 }
 
 .contactForm {
-	composes: centerVertically from "../helpers.module.css";
 	width: 60%;
 	max-width: 600px;
-	margin: 0 auto;
+	margin: auto;
+	margin-top: 4rem;
+	top: 50%;
+}
+
+.title {
+	composes: text from "../project_globals.module.css";
+	font-size: 2rem;
+	text-align: center;
+	margin: 0;
+	padding-top: 5rem;
 }
 
 .label {

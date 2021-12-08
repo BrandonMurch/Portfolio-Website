@@ -58,6 +58,9 @@ function Contact() {
         </div> */}
 
 			<section id="contact" className={styles.contact}>
+				<h1 className={styles.title}>
+					Get in touch, <br /> Let's make something great!
+				</h1>
 				<form
 					name="contact"
 					className={
@@ -98,12 +101,12 @@ function Contact() {
 						<input
 							className={styles.submit}
 							type="reset"
-							value="nevermind"
+							value="reset"
 						/>
 						<input
 							className={styles.submit}
 							type="submit"
-							value="Send Brandon an email!"
+							value="send"
 							ref={submitButton}
 							onClick={() => setSubmitted(true)}
 						/>
