@@ -1,3 +1,17 @@
+.item {
+	display: inline;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.rightSide {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+}
+
+
 .icon {
     fill: #EEE;
     fill-opacity:1;

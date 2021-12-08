@@ -5,19 +5,20 @@ import React from 'react';
 import styles from './home.module.css';
 
 // Components
-import Loading from '../loading_page';
-import usePreloadImage from '../hooks/usePreloadImage';
+import Logo from './logo'
+import SocialLinks from '../icons';
 
 function AboutMe() {
     const aboutMe = "a software developer living in tasmania.";
 
-    const backgroundSource = window.innerHeight > window.innerWidth ? "../images/Personal_Photo_cropped.jpg" : "../images/Personal_Photo_gradient.jpg"
 
     return (
         <>
+        <Logo />
+        <SocialLinks />
 
         <section  className={styles.background}>
-            <div className={styles.container}>
+            <div className={styles.titleContainer}>
                 <h1 className={styles.title}> brandon murch </h1>
                 <h3 className={styles.subtitle}> {aboutMe} </h3>
             </div>

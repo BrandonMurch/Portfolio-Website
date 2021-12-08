@@ -6,8 +6,9 @@
 
 .text {
     font-family: "montserrat", sans-serif;
-    color: #DDD;
+    color: #EEE;
     font-weight: 600;
+    text-transform: lowercase;
 }
 
 .backgroundImage {
