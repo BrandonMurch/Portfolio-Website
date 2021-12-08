@@ -6,13 +6,6 @@
     z-index: 2;
 }
 
-@media screen and (orientation: portrait) {
-
-    .container {
-        width: 100vw;
-    }
-}
-
 .titleContainer {
     position: absolute;
     top: 30vh;
@@ -20,6 +13,16 @@
     text-align: center;
     padding-bottom: 1em;
 }
+
+@media screen and (max-width: 1300px) {
+
+    .titleContainer {
+        top: 80vh;
+        width: 100vw;
+    }
+}
+
+
 
 .title {
     margin: auto;

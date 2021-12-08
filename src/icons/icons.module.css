@@ -1,25 +1,23 @@
 .icon {
-    fill: #EEE;
-    fill-opacity:1;
-    fill-rule:evenodd;
-    stroke:none;
-    transition: all .2s ease-in-out;
+	fill: #eee;
+	fill-opacity: 1;
+	fill-rule: evenodd;
+	stroke: none;
+	transition: all 0.2s ease-in-out;
 }
 
 .iconContainer {
-    float: right;
-    cursor: pointer;
-    width: 2.5rem;
-    height: 2.5rem;
-    transition: all .2s ease-in-out;
-    margin: 0 0.5rem;
+	cursor: pointer;
+	width: 2.5rem;
+	height: 2.5rem;
+	transition: all 0.2s ease-in-out;
+	margin: 0.5rem;
 }
 
 .iconContainer:hover {
-    transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .iconContainer:hover .icon {
-    fill: #43cea2;
+	fill: #43cea2;
 }
-

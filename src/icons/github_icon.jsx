@@ -6,8 +6,8 @@ function GithubLogo() {
         <div className={styles.iconContainer}>
             <svg
                 viewBox="0 0 48 48"
-                height="auto"
-                width="auto">
+                height="2.5rem"
+                width="2.5rem">
                     <g
                         className={styles.icon}
                         transform="matrix(0.39409455,0,0,-0.40055682,24.46875,0.221006)"
