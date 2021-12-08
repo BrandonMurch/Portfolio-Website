@@ -3,7 +3,7 @@ import NavBar from "../navbar";
 import Home from "../home";
 import About from "../about";
 import Contact from "../contact";
-import Projects from "../projects";
+import Work from "../work";
 import { Background1 } from "../backgrounds";
 import styles from "./app.module.css";
 
@@ -40,7 +40,7 @@ class App extends React.Component {
 				<Home />
 				<About />
 				<Background1 />
-				<Projects />
+				<Work />
 				{/* <Background2 /> */}
 				<Contact />
 			</div>

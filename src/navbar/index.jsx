@@ -69,8 +69,8 @@ function getPages() {
 			index: 0,
 		},
 		{
-			name: "Projects",
-			location: "#projects",
+			name: "Work",
+			location: "#work",
 			index: 1,
 		},
 		{
