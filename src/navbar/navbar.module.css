@@ -6,7 +6,6 @@ html {
 	position: absolute;
 	right: 60px;
 	top: 20px;
-	width: 100%;
 	z-index: 3;
 }
 
@@ -16,6 +15,9 @@ html {
 
 .list {
 	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	position: relative;
 }
 
 .item {
@@ -26,12 +28,10 @@ html {
 
 .link {
 	composes: text from "../project_globals.module.css";
-	display: inline;
 	text-decoration: none;
-	padding: 0.5em;
+	margin: 0.5em;
 	text-transform: lowercase;
 	font-size: 1.5rem;
-	cursor: pointer;
 	letter-spacing: 0.1em;
 	transition: all 0.3s ease-in-out;
 }
@@ -43,7 +43,6 @@ html {
 }
 
 .socialsContainer {
-	float: right;
 	width: 6rem;
 	display: flex;
 	justify-content: center;
@@ -71,15 +70,16 @@ html {
 	}
 
 	.list {
-		width: 300px;
 		height: 100vh;
-		background-color: rgba(0, 0, 0, 0.6);
-		position: absolute;
-		top: 0;
+		width: 300px;
 		right: -300px;
+		top: 0;
+		position: absolute;
 		padding: 100px 0;
+		background-color: rgba(0, 0, 0, 0.6);
 		margin: 0;
 		transition: all 0.5s ease-in-out;
+		flex-direction: column;
 	}
 
 	.open {

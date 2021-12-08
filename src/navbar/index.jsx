@@ -6,8 +6,7 @@ import NavBarIcon from "../icons/navbar_icon";
 function NavBar() {
 	const [isOpen, setIsOpen] = useState(false);
 
-	function getLinkComponents(argPages) {
-		const pages = window.innerWidth < 1200 ? argPages.reverse() : argPages;
+	function getLinkComponents(pages) {
 		return pages.map((page) => {
 			return (
 				<li key={page.index} className={styles.item}>
@@ -25,27 +24,6 @@ function NavBar() {
 		});
 	}
 
-	function GetOrderedNavigationItems() {
-		if (window.innerWidth < 1200) {
-			return (
-				<>
-					{getLinkComponents(getPages())}
-					<div className={styles.socialsContainer}>
-						<SocialIcons />
-					</div>
-				</>
-			);
-		}
-		return (
-			<>
-				<div className={styles.socialsContainer}>
-					<SocialIcons />
-				</div>{" "}
-				{getLinkComponents(getPages())}
-			</>
-		);
-	}
-
 	return (
 		<section className={styles.navbar}>
 			<div
@@ -55,7 +33,10 @@ function NavBar() {
 				<NavBarIcon isOpen={isOpen} />
 			</div>
 			<ul className={styles.list + " " + (isOpen ? styles.open : "")}>
-				<GetOrderedNavigationItems />
+				{getLinkComponents(getPages())}
+				<div className={styles.socialsContainer}>
+					<SocialIcons />
+				</div>
 			</ul>
 		</section>
 	);
@@ -64,14 +45,9 @@ function NavBar() {
 function getPages() {
 	return [
 		{
-			name: "Contact",
-			location: "#contact",
-			index: 0,
-		},
-		{
-			name: "Work",
-			location: "#work",
-			index: 1,
+			name: "Home",
+			location: "/#",
+			index: 3,
 		},
 		{
 			name: "About",
@@ -79,9 +55,14 @@ function getPages() {
 			index: 2,
 		},
 		{
-			name: "Home",
-			location: "/#",
-			index: 3,
+			name: "Work",
+			location: "#work",
+			index: 1,
+		},
+		{
+			name: "Contact",
+			location: "#contact",
+			index: 0,
 		},
 	];
 }
