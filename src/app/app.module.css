@@ -1,6 +1,7 @@
-
-html, body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+.appWrapper {
+	width: 100vw;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	position: relative;
 }

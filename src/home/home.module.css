@@ -1,53 +1,59 @@
 .background {
-    composes: backgroundImage from "../project_globals.module.css";
-    background-position: top left;
-    position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../images/Personal_Photo_left2.jpg");
-    z-index: 2;
+	composes: backgroundImage from "../project_globals.module.css";
+	background-position: top left;
+	position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+		url("../images/Personal_Photo_left2.jpg");
+	z-index: 2;
 }
 
 .titleContainer {
-    position: absolute;
-    top: 30vh;
-    right: 30px;
-    text-align: center;
-    padding-bottom: 1em;
+	position: absolute;
+	top: 30vh;
+	right: 30px;
+	text-align: center;
+	padding-bottom: 1em;
 }
-
-@media screen and (max-width: 1300px) {
-
-    .titleContainer {
-        top: 80vh;
-        width: 100vw;
-    }
-}
-
-
 
 .title {
-    margin: auto;
-    composes: text from "../project_globals.module.css";
-    padding: 0.5rem;
-    font-size: 5vw;
+	margin: auto;
+	composes: text from "../project_globals.module.css";
+	padding: 0.5rem;
+	font-size: 5vw;
 }
 
 .subtitle {
-    composes: text from "../project_globals.module.css";
-    font-size: 2vw;
+	composes: text from "../project_globals.module.css";
+	font-size: 2vw;
+}
+
+@media screen and (max-width: 1300px) {
+	.titleContainer {
+		top: 80vh;
+		width: 100vw;
+		right: 0;
+	}
+
+	.title {
+		font-size: 9vw;
+	}
+
+	.subtitle {
+		font-size: 3.5vw;
+		margin: 0;
+	}
 }
 
 .logoContainer {
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    z-index: 100;
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	z-index: 100;
 }
 
 .logoText {
-    composes: text from "../project_globals.module.css";
-    text-decoration: underline;
-    font-size: 3rem;
-    margin: 0;
+	composes: text from "../project_globals.module.css";
+	text-decoration: underline;
+	font-size: 3rem;
+	margin: 0;
 }
-
-
