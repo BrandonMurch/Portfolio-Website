@@ -7,15 +7,13 @@ function NavBarIcon(props) {
 			<div>
 				<svg
 					className={
-						styles.icon +
+						styles.iconNavBar +
 						" " +
 						(props.isOpen ? "" : styles.hiddenIcon)
 					}
 					xmlns="http://www.w3.org/2000/svg"
 					aria-hidden="true"
 					role="img"
-					width="5rem"
-					height="5rem"
 					preserveAspectRatio="xMidYMid meet"
 					viewBox="0 0 1024 1024"
 				>
@@ -23,15 +21,13 @@ function NavBarIcon(props) {
 				</svg>
 				<svg
 					className={
-						styles.icon +
+						styles.iconNavBar +
 						" " +
 						(props.isOpen ? styles.hiddenIcon : "")
 					}
 					xmlns="http://www.w3.org/2000/svg"
 					aria-hidden="true"
 					role="img"
-					width="5rem"
-					height="5rem"
 					preserveAspectRatio="xMidYMid meet"
 					viewBox="0 0 24 24"
 				>

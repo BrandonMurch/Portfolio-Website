@@ -8,6 +8,18 @@
 	position: absolute;
 }
 
+.iconSocial {
+	composes: icon;
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+.iconNavBar {
+	composes: icon;
+	height: 5rem;
+	width: 5rem;
+}
+
 .iconContainer {
 	cursor: pointer;
 	width: 2.5rem;
