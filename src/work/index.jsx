@@ -13,6 +13,7 @@ function ProjectBox(props) {
 			<div className={styles.descriptionContainer}>
 				<h2 className={styles.projectName}>{props.name}</h2>
 				<p className={styles.description}>{props.description}</p>
+				<p className={styles.skills}>Skills: {props.techStack}</p>
 				<LinkButton
 					className={styles.button}
 					link={props.code}
@@ -50,6 +51,7 @@ function getBoxes() {
 			image={tend}
 			name="tend"
 			description="A social media website for plant enthusiasts"
+			techStack="Vuejs"
 			code="https://github.com/BrandonMurch/tend"
 			demo="https://tend.brandonmurch.com"
 		/>,
@@ -58,24 +60,27 @@ function getBoxes() {
 			image={Calculator}
 			name="Javascript Calculator"
 			description="A basic calculator web app"
+			techStack="Javascript, HTML, CSS"
 			code="https://github.com/BrandonMurch/Javascript-Calculator"
 			demo="https://www.brandonmurch.com/Javascript-Calculator"
-		/>,
-		<ProjectBox
-			key="4"
-			image={Quote}
-			name="Quote Generator"
-			description="A random quote generator"
-			code="https://github.com/BrandonMurch/Quote-Generator"
-			demo="https://codepen.io/BrandonMurch/full/vRBZVY/"
 		/>,
 		<ProjectBox
 			key="5"
 			image={SimonSays}
 			name="Simon Says"
 			description="A virtual game of simon says, complete with hard mode!"
+			techStack="Javascript, HTML, CSS "
 			code="https://github.com/BrandonMurch/Simon-Game"
 			demo="https://codepen.io/BrandonMurch/full/YaErGR/"
+		/>,
+		<ProjectBox
+			key="4"
+			image={Quote}
+			name="Quote Generator"
+			description="A random quote generator"
+			techStack="Javascript, HTML, Third Party API's"
+			code="https://github.com/BrandonMurch/Quote-Generator"
+			demo="https://codepen.io/BrandonMurch/full/vRBZVY/"
 		/>,
 	];
 
