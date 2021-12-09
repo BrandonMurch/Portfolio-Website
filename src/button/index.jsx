@@ -15,7 +15,12 @@ export function LinkButton(props) {
 		: styles.linkButton;
 
 	return (
-		<a className={selectedStyle + " " + props.className} href={props.link}>
+		<a
+			className={selectedStyle + " " + props.className}
+			href={props.link}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			{props.children}
 		</a>
 	);
