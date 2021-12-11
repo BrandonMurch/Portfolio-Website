@@ -10,9 +10,7 @@ function AppButton(props) {
 }
 
 export function LinkButton(props) {
-	const selectedStyle = props.dark
-		? styles.darkLinkButton
-		: styles.linkButton;
+	const selectedStyle = props.forceLight ? styles.lightButton : styles.button;
 
 	return (
 		<a

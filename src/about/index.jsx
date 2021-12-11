@@ -4,8 +4,9 @@ import BoundarySVG from "../boundary";
 
 function About() {
 	return (
-		<section className={styles.background} id="about">
+		<section className={styles.about} id="about">
 			<BoundarySVG className={styles.boundary} />
+			<div className={styles.background}></div>
 			<h1 className={styles.title}>About Me</h1>
 			<p className={styles.body}>
 				From a chef, serving up delicacies all over the world, to a web

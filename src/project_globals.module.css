@@ -1,31 +1,35 @@
-html,
-body {
-	overflow-x: hidden;
-	width: 100vw;
-	margin: 0;
-	padding: 0;
-}
-
 @font-face {
 	font-family: "montserrat";
 	font-display: swap;
 	src: url(fonts/Montserrat-Regular.otf) format("opentype");
 }
 
-.text {
+:root {
+	--text-colour: #555;
+	--gradient-top: #ddd;
+	--gradient-bottom: #bbb;
+
+	--accent-colour: #43cea2;
+
+	--photo-text-colour: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text-colour: #ccc;
+		--gradient-top: #666;
+		--gradient-bottom: #444;
+	}
+}
+
+html,
+body {
+	overflow-x: hidden;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
 	font-family: "montserrat", sans-serif;
-	color: #eee;
-	font-weight: 600;
 	text-transform: lowercase;
 	font-size: 1rem;
-}
-
-.backgroundImage {
-	height: 100vh;
-	width: 100%;
-	background-size: cover;
-}
-
-.transparentBackground {
-	background-color: rgba(0, 0, 0, 0.5);
+	color: var(--text-colour);
 }

@@ -21,24 +21,24 @@ html {
 }
 
 .item {
-	float: right;
 	padding-top: 0.8em;
 	cursor: pointer;
 }
 
 .link {
-	composes: text from "../project_globals.module.css";
+	color: var(--text-colour);
 	text-decoration: none;
 	margin: 0.5em;
-	text-transform: lowercase;
 	font-size: 1.5rem;
 	letter-spacing: 0.1em;
 	transition: all 0.3s ease-in-out;
 }
 
 .link:hover {
-	color: #43cea2;
-	text-shadow: 0 0 0.9px #43cea2, 0 0 0.9px #43cea2, 0 0 0.9px #43cea2;
+	color: var(--accent-colour);
+	/* Make text appear bold without changing box size */
+	text-shadow: 0 0 0.9px, 0 0 0.9px var(--accent-colour),
+		0 0 0.9px var(--accent-colour);
 	font-size: 1.55rem;
 }
 
@@ -52,6 +52,8 @@ html {
 	.navbar {
 		right: 0;
 		top: 0;
+		position: absolute;
+		z-index: 3;
 	}
 
 	.navbarToggle {
@@ -74,7 +76,6 @@ html {
 		width: 300px;
 		right: -300px;
 		top: 0;
-		position: absolute;
 		padding: 100px 0;
 		background-color: rgba(0, 0, 0, 0.6);
 		margin: 0;
@@ -98,9 +99,5 @@ html {
 	.list {
 		width: 100vw;
 		right: -100vw;
-	}
-
-	.open {
-		right: 0;
 	}
 }

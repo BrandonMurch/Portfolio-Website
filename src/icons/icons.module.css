@@ -1,8 +1,5 @@
 .icon {
-	fill: #eee;
-	fill-opacity: 1;
-	fill-rule: evenodd;
-	stroke: none;
+	fill: var(--photo-text-colour);
 	transition: all 0.2s ease-in-out;
 	transition: opacity 0.25s 0.25s ease-in-out;
 	position: absolute;
@@ -33,7 +30,7 @@
 }
 
 .iconContainer:hover .icon {
-	fill: #43cea2;
+	fill: var(--accent-colour);
 }
 
 .hiddenIcon {

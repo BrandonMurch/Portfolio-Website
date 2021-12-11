@@ -1,28 +1,27 @@
 // Libraries
-import React from 'react';
+import React from "react";
 
 // CSS
-import styles from './home.module.css';
+import styles from "./home.module.css";
 
 // Components
-import Logo from './logo'
+import Logo from "./logo";
 
 function AboutMe() {
-    const aboutMe = "a software developer living in tasmania.";
+	const aboutMe = "a software developer living in tasmania.";
 
+	return (
+		<>
+			<Logo />
 
-    return (
-        <>
-        <Logo />
-
-        <section  className={styles.background}>
-            <div className={styles.titleContainer}>
-                <h1 className={styles.title}> brandon murch </h1>
-                <h3 className={styles.subtitle}> {aboutMe} </h3>
-            </div>
-        </section>
-        </>
-    )
+			<section className={styles.background}>
+				<div className={styles.titleContainer}>
+					<h1 className={styles.title}> brandon murch </h1>
+					<h3 className={styles.subtitle}> {aboutMe} </h3>
+				</div>
+			</section>
+		</>
+	);
 }
 
 export default AboutMe;

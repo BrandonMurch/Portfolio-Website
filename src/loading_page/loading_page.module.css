@@ -1,29 +1,27 @@
 .loadingBackground {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    background-color: #555;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	background-color: var(--gradient-bottom);
 }
-
 
 .container {
-    position: fixed;
-    top: 30vh;
-    width: 100vw;
+	position: fixed;
+	top: 30vh;
+	width: 100vw;
 }
 
-.loadingText{
-    composes: text from "../project_globals.module.css";
-    color: #DDD;
-    text-align: center;
-    font-size: 4rem;
-    margin: 0;
+.loadingText {
+	color: var(--text-colour);
+	text-align: center;
+	font-size: 4rem;
+	margin: 0;
 }
 
 .spinnerContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
 }
