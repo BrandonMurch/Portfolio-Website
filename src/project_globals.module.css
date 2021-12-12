@@ -8,14 +8,18 @@ body {
 	--text-colour: #555;
 	--gradient-top: #ddd;
 	--gradient-bottom: #bbb;
+	--background-overlay: rgba(0, 0, 0, 0.1);
+
 	--accent-colour: #43cea2;
-	--photo-text-colour: #eee;
+	--photo-text-colour: #fff;
 }
 
 body.switched-theme {
 	--text-colour: #ccc;
 	--gradient-top: #666;
 	--gradient-bottom: #444;
+	--background-overlay: rgba(0, 0, 0, 0.2);
+	--photo-text-colour: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,11 +27,15 @@ body.switched-theme {
 		--text-colour: #ccc;
 		--gradient-top: #666;
 		--gradient-bottom: #444;
+		--background-overlay: rgba(0, 0, 0, 0.2);
+		--photo-text-colour: #ccc;
 	}
 	:global(body.switched-theme) {
 		--text-colour: #555;
 		--gradient-top: #ddd;
 		--gradient-bottom: #bbb;
+		--background-overlay: rgba(0, 0, 0, 0.1);
+		--photo-text-colour: #fff;
 	}
 }
 

@@ -4,7 +4,10 @@
 	background-size: cover;
 	background-position: top left;
 	position: relative;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+	background-image: linear-gradient(
+			var(--background-overlay),
+			var(--background-overlay)
+		),
 		url("../images/Personal_Photo_left2.jpg");
 	z-index: 2;
 }
@@ -56,8 +59,8 @@
 @media screen and (max-width: 900px) {
 	.background {
 		background-image: linear-gradient(
-				rgba(0, 0, 0, 0.1),
-				rgba(0, 0, 0, 0.1) 40%,
+				var(--background-overlay),
+				var(--background-overlay) 40%,
 				rgba(0, 0, 0, 0.6)
 			),
 			url("../images/Personal_Photo_left2.jpg");
