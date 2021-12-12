@@ -80,6 +80,9 @@
 }
 
 @media screen and (max-width: 601px) {
+	.background {
+		background-position: 10%;
+	}
 	.titleContainer {
 		width: 100vw;
 		left: 0;
