@@ -5,7 +5,7 @@ function BoundarySVG(props) {
 	return (
 		<svg
 			className={props.className}
-			viewBox="0 500 900 100"
+			viewBox="0 522 900 75"
 			xmlns="http://www.w3.org/2000/svg"
 			version="1.1"
 		>

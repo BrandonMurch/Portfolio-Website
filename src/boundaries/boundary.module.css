@@ -1,8 +1,7 @@
 .boundary {
-	width: 100vw;
-	object-fit: contain;
+	width: 104vw;
 	position: absolute;
-	left: -3px;
+	left: -2vw;
 	z-index: 5;
 	stroke-width: 2px;
 	stroke: var(--text-colour);
@@ -12,12 +11,12 @@
 	composes: boundary;
 	fill: var(--gradient-top);
 	top: 0;
-	transform: translateY(-99%);
+	transform: translateY(-95%);
 }
 
 .bottomBoundary {
 	composes: boundary;
 	fill: var(--gradient-bottom);
 	bottom: 0;
-	transform: rotate(180deg) translateY(-99%);
+	transform: rotate(180deg) translateY(-95%);
 }
