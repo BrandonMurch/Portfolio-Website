@@ -15,28 +15,6 @@
 	inset: 0;
 }
 
-.overfillBoundary {
-	width: 106vw;
-	position: absolute;
-	left: -3vw;
-	z-index: 5;
-}
-
-.boundary {
-	composes: overfillBoundary;
-
-	fill: var(--gradient-top);
-	top: 0;
-	transform: translateY(-90%) scaleX(-1);
-}
-
-.bottomBoundary {
-	composes: overfillBoundary;
-	fill: var(--gradient-bottom);
-	bottom: 0;
-	transform: rotate(180deg) translateY(-90%) scaleX(-1);
-}
-
 .text {
 	color: var(--text-colour);
 	position: relative;

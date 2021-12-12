@@ -9,6 +9,7 @@
 	background-attachment: fixed;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 		url("../images/mtwellington.jpeg");
+	padding-top: 10vh;
 }
 
 .contactForm {

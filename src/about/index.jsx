@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./about.module.css";
-import BoundarySVG from "../boundary";
+import BoundarySVG from "../boundaries/boundary1";
 
 function About() {
 	return (
 		<section className={styles.about} id="about">
-			<BoundarySVG className={styles.boundary} />
+			<BoundarySVG />
 			<div className={styles.background}></div>
 			<h1 className={styles.title}>About Me</h1>
 			<p className={styles.body}>
@@ -15,7 +15,6 @@ function About() {
 				Science at Deakin Univeristy. Spending my spare time soaking up
 				all the new coding techniques and algorithms that I can.
 			</p>
-			<BoundarySVG className={styles.bottomBoundary} />
 		</section>
 	);
 }

@@ -1,0 +1,23 @@
+.boundary {
+	width: 100vw;
+	object-fit: contain;
+	position: absolute;
+	left: -3px;
+	z-index: 5;
+	stroke-width: 2px;
+	stroke: var(--text-colour);
+}
+
+.topBoundary {
+	composes: boundary;
+	fill: var(--gradient-top);
+	top: 0;
+	transform: translateY(-99%);
+}
+
+.bottomBoundary {
+	composes: boundary;
+	fill: var(--gradient-bottom);
+	bottom: 0;
+	transform: rotate(180deg) translateY(-99%);
+}

@@ -5,6 +5,7 @@ import Quote from "../images/QuoteGenerator.jpg";
 import SimonSays from "../images/Simon Says.jpg";
 import tend from "../images/tend.jpg";
 import { LinkButton } from "../button";
+import Boundary from "../boundaries/boundary2";
 
 function ProjectBox(props) {
 	return (
@@ -37,7 +38,8 @@ function Projects() {
 	return (
 		<>
 			<section className={styles.work} id="work">
-				<h1 className={styles.title}>Work</h1>
+				<Boundary />
+				<h1 className={styles.title}>work</h1>
 				<div className={styles.cardContainer}>{getBoxes()}</div>
 			</section>
 		</>
