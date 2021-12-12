@@ -6,7 +6,7 @@ import styles from "./icons.module.css";
 
 function SocialLinks() {
 	return (
-		<div>
+		<div className={styles.container}>
 			{getSocials().map((social) => {
 				const Display = social.logo;
 				return (
