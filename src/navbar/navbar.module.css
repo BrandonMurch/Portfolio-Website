@@ -82,10 +82,6 @@ html {
 		flex-direction: column;
 	}
 
-	.open {
-		right: 0;
-	}
-
 	.socialsContainer {
 		width: 100%;
 		display: flex;
@@ -99,4 +95,8 @@ html {
 		width: 100vw;
 		right: -100vw;
 	}
+}
+
+.open {
+	right: 0;
 }
