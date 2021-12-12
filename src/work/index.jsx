@@ -39,7 +39,7 @@ function Projects() {
 		<>
 			<section className={styles.work} id="work">
 				<Boundary />
-				<h1 className={styles.title}>work</h1>
+				<h1 className={styles.title}>Here is some of my past work:</h1>
 				<div className={styles.cardContainer}>{getBoxes()}</div>
 			</section>
 		</>
