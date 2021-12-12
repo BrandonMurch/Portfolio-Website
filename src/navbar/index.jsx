@@ -34,9 +34,9 @@ function NavBar() {
 			</div>
 			<ul className={styles.list + " " + (isOpen ? styles.open : "")}>
 				{getLinkComponents(getPages())}
-				<div className={styles.socialsContainer}>
+				<li className={styles.socialsContainer}>
 					<SocialIcons />
-				</div>
+				</li>
 			</ul>
 		</section>
 	);

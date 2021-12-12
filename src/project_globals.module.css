@@ -4,21 +4,30 @@
 	src: url(fonts/Montserrat-Regular.otf) format("opentype");
 }
 
-:root {
+body {
 	--text-colour: #555;
 	--gradient-top: #ddd;
 	--gradient-bottom: #bbb;
-
 	--accent-colour: #43cea2;
-
 	--photo-text-colour: #eee;
 }
 
+body.switched-theme {
+	--text-colour: #ccc;
+	--gradient-top: #666;
+	--gradient-bottom: #444;
+}
+
 @media (prefers-color-scheme: dark) {
-	:root {
+	body {
 		--text-colour: #ccc;
 		--gradient-top: #666;
 		--gradient-bottom: #444;
+	}
+	:global(body.switched-theme) {
+		--text-colour: #555;
+		--gradient-top: #ddd;
+		--gradient-bottom: #bbb;
 	}
 }
 

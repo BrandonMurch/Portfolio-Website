@@ -46,7 +46,7 @@
 }
 
 .logoText {
-	color: var(--text-colour);
+	color: var(--photo-text-colour);
 	text-decoration: underline;
 	font-size: 3rem;
 	margin: 0;
