@@ -53,12 +53,8 @@ function Contact() {
 
 	return (
 		<>
-			{/* <div hidden={loaded}>
-            <Loading/>
-        </div> */}
-
-			<section id="contact" className={styles.contact}>
-				<h1 className={styles.title}>
+			<section className={styles.contact}>
+				<h1 className={styles.title} id="contact">
 					Get in touch, <br /> Let's make something great!
 				</h1>
 				<form
