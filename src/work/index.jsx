@@ -53,7 +53,7 @@ function getBoxes() {
 			image={tend}
 			name="tend"
 			description="A social media website for plant enthusiasts"
-			techStack="Vuejs"
+			techStack="Vuejs, vuerouter, vuex"
 			code="https://github.com/BrandonMurch/tend"
 			demo="https://tend.brandonmurch.com"
 		/>,
