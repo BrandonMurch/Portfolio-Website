@@ -29,6 +29,7 @@
 	justify-content: space-around;
 	align-items: center;
 	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.14);
 }
 
 .card:nth-child(odd) {
@@ -100,11 +101,5 @@
 
 	.projectName {
 		margin-top: 2rem;
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	.card {
-		background-color: rgba(255, 255, 255, 0.14);
 	}
 }

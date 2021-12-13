@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./work.module.css";
-import Calculator from "../images/Javascript Calculator.jpg";
+import Portfolio from "../images/portfolio.png";
 import Quote from "../images/QuoteGenerator.jpg";
 import SimonSays from "../images/Simon Says.jpg";
 import tend from "../images/tend.jpg";
@@ -59,12 +59,12 @@ function getBoxes() {
 		/>,
 		<ProjectBox
 			key="2"
-			image={Calculator}
-			name="Javascript Calculator"
-			description="A basic calculator web app"
-			techStack="Javascript, HTML, CSS"
-			code="https://github.com/BrandonMurch/Javascript-Calculator"
-			demo="https://www.brandonmurch.com/Javascript-Calculator"
+			image={Portfolio}
+			name="This Portfolio website"
+			description="A website to display my work and provide a little information about me."
+			techStack="React, CSS Modules"
+			code="https://github.com/BrandonMurch/Portfolio-Website"
+			demo="https://www.brandonmurch.com"
 		/>,
 		<ProjectBox
 			key="5"
@@ -80,7 +80,7 @@ function getBoxes() {
 			image={Quote}
 			name="Quote Generator"
 			description="A random quote generator"
-			techStack="Javascript, HTML, Third Party API's"
+			techStack="JQuery, CSS, HTML, Third Party API"
 			code="https://github.com/BrandonMurch/Quote-Generator"
 			demo="https://codepen.io/BrandonMurch/full/vRBZVY/"
 		/>,
