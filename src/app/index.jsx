@@ -9,7 +9,6 @@ import styles from "./app.module.css";
 import { usePreloadImages } from "../hooks/usePreloadImage";
 import getPhotoSources from "./imageLinks";
 import Loading from "../loading_page";
-import "../project_globals.module.css";
 
 function App() {
 	const loaded = usePreloadImages(getPhotoSources());
