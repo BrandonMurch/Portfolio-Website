@@ -30,7 +30,7 @@
 
 .body {
 	composes: text;
-	font-size: 1.2rem;
-	width: clamp(200px, 50vw, 800px);
+	font-size: 1.5rem;
+	width: clamp(200px, 75vw, 800px);
 	margin: auto;
 }

@@ -7,13 +7,21 @@ function About() {
 		<section className={styles.about} id="about">
 			<BoundarySVG />
 			<div className={styles.background}></div>
-			<h1 className={styles.title}>About Me</h1>
+			{/* <h1 className={styles.title}>About Me</h1> */}
 			<p className={styles.body}>
-				From a chef, serving up delicacies all over the world, to a web
-				developer cooking up some sweet websites and solutions for your
-				business. Currently working towards my Bachelor of Computer
-				Science at Deakin Univeristy. Spending my spare time soaking up
-				all the new coding techniques and algorithms that I can.
+				From a chef, cooking delicacies in high-end restaurants all over
+				the world, to then becoming a <b>software developer</b> serving
+				up websites and software solutions. I am able to bring my
+				creativity and logical thinking to{" "}
+				<b>solve problems to help make lives easier</b>.
+				<br />
+				<br />
+				Currently I am working towards a{" "}
+				<b>Bachelor of Computer Science</b> at <b>Deakin University</b>{" "}
+				with specialisations in <b>embedded systems</b> and{" "}
+				<b>full-stack web and mobile development</b>. My spare time is
+				consumed by researching new techniques, algorithms and tools to
+				create better solutions.
 			</p>
 		</section>
 	);
