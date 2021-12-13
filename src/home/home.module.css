@@ -23,12 +23,14 @@
 	margin: auto;
 	color: var(--photo-text-colour);
 	padding: 0.5rem;
-	font-size: 5vw;
+	font-size: 5.5vw;
+	font-weight: normal;
 }
 
 .subtitle {
 	color: var(--photo-text-colour);
 	font-size: 2vw;
+	margin: 0;
 }
 
 .logoContainer {

@@ -2,7 +2,11 @@
 	height: 100px;
 	width: 100px;
 	border-radius: 100%;
-	background: -webkit-linear-gradient(bottom left, #43cea2 0%, #185a9d 100%);
+	background: -webkit-linear-gradient(
+		bottom left,
+		var(--accent-colour) 0%,
+		var(--accent-colour2) 100%
+	);
 }
 
 .background {
