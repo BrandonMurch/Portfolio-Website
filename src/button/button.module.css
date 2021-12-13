@@ -7,6 +7,8 @@
 	cursor: pointer;
 	border-radius: 10px;
 	text-decoration: none;
+	font-weight: bold;
+	min-width: 20%;
 }
 
 .button:hover {
@@ -24,6 +26,7 @@
 
 .lightButton {
 	composes: button;
-	border: 3px solid var(--photo-text-colour);
-	color: var(--photo-text-colour);
+	background-color: var(--photo-text-colour);
+	border: 3px solid #555;
+	color: #555;
 }
