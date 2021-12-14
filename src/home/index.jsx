@@ -17,7 +17,7 @@ function AboutMe() {
 			<section className={styles.background}>
 				<div className={styles.titleContainer}>
 					<h1 className={styles.title}> brandon murch </h1>
-					<h3 className={styles.subtitle}> {aboutMe} </h3>
+					<h2 className={styles.subtitle}> {aboutMe} </h2>
 				</div>
 			</section>
 		</>
