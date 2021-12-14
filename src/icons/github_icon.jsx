@@ -5,6 +5,7 @@ function GithubLogo() {
 	return (
 		<div className={styles.iconContainer}>
 			<svg viewBox="0 0 48 48">
+				<title>Github Icon</title>
 				<g
 					className={styles.iconSocial}
 					transform="matrix(0.39409455,0,0,-0.40055682,24.46875,0.221006)"
