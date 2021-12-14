@@ -6,6 +6,8 @@ import SimonSays from "../images/Simon Says.jpg";
 import tend from "../images/tend.jpg";
 import { LinkButton } from "../button";
 import Boundary from "../boundaries/boundary2";
+import Slider from "../slider";
+import useWindowWidth from "../hooks/useWindowWidth";
 
 function ProjectBox(props) {
 	return (
@@ -35,12 +37,20 @@ function ProjectBox(props) {
 }
 
 function Projects() {
+	const width = useWindowWidth();
+
 	return (
 		<>
 			<section className={styles.work} id="work">
 				<Boundary />
 				<h1 className={styles.title}>Here is some of my past work:</h1>
-				<div className={styles.cardContainer}>{getBoxes()}</div>
+				{width < 700 ? (
+					<Slider width={75} widthUnit="vw">
+						{getBoxes()}
+					</Slider>
+				) : (
+					getBoxes()
+				)}
 			</section>
 		</>
 	);
