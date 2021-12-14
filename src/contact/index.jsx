@@ -84,7 +84,9 @@ function Contact() {
 						onChange={handleChange}
 					/>
 					<div className={styles.inputGroup}>
-						<label className={styles.label}>message</label>
+						<label className={styles.label} htmlFor="message">
+							message
+						</label>
 						<textarea
 							className={styles.textArea}
 							id="message"
