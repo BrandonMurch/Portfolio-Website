@@ -69,7 +69,7 @@
 	}
 
 	.titleContainer {
-		top: 75vh;
+		top: calc(100vh - 20vw);
 		right: initial;
 		left: 2rem;
 	}
@@ -89,6 +89,8 @@
 		background-position: 10%;
 	}
 	.titleContainer {
+		top: calc(100vh - 25vw);
+
 		width: 100vw;
 		left: 0;
 	}
