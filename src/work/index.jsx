@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./work.module.css";
-import Portfolio from "../images/portfolio.png";
-import Quote from "../images/QuoteGenerator.jpg";
-import SimonSays from "../images/Simon Says.jpg";
-import tend from "../images/tend.jpg";
+import Portfolio from "../images/portfolio.webp";
+import Quote from "../images/QuoteGenerator.webp";
+import SimonSays from "../images/Simon Says.webp";
+import tend from "../images/tend.webp";
 import { LinkButton } from "../button";
 import Boundary from "../boundaries/boundary2";
 import Slider from "../slider";

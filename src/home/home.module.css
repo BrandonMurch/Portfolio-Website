@@ -8,7 +8,7 @@
 			var(--background-overlay),
 			var(--background-overlay)
 		),
-		url("../images/Personal_Photo_left2.jpg");
+		url("../images/Personal_Photo_left2.webp");
 	z-index: 2;
 }
 
@@ -65,7 +65,7 @@
 				var(--background-overlay) 40%,
 				rgba(0, 0, 0, 0.6)
 			),
-			url("../images/Personal_Photo_left2.jpg");
+			url("../images/Personal_Photo_left2.webp");
 	}
 
 	.titleContainer {
