@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import NavBar from "../navbar";
 import Home from "../home";
 import About from "../about";
@@ -11,7 +11,8 @@ import getPhotoSources from "./imageLinks";
 import Loading from "../loading_page";
 
 function App() {
-	const loaded = usePreloadImages(getPhotoSources());
+	const backgroundImages = useRef(getPhotoSources());
+	const loaded = usePreloadImages(backgroundImages.current);
 
 	if (!loaded) {
 		return <Loading />;
