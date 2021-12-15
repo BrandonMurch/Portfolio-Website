@@ -62,7 +62,7 @@ function getBoxes() {
 			key="1"
 			image={tend}
 			name="tend"
-			description="A social media website for plant enthusiasts"
+			description="A social media website for plant enthusiasts. Keep track of care schedules, learn about plants, and connect with other like-minded individuals."
 			techStack="Vuejs, vuerouter, vuex"
 			code="https://github.com/BrandonMurch/tend"
 			demo="https://tend.brandonmurch.com"
@@ -70,7 +70,7 @@ function getBoxes() {
 		<ProjectBox
 			key="2"
 			image={Portfolio}
-			name="This Portfolio website"
+			name="This Portfolio Website"
 			description="A website to display my work and provide a little information about me."
 			techStack="React, CSS Modules"
 			code="https://github.com/BrandonMurch/Portfolio-Website"
@@ -80,7 +80,7 @@ function getBoxes() {
 			key="5"
 			image={SimonSays}
 			name="Simon Says"
-			description="A virtual game of simon says, complete with hard mode!"
+			description="A virtual game of simon says, complete with hard mode! Replay the classic 1970's memory game. Listen to the series of button presses, then repeat them."
 			techStack="Javascript, HTML, CSS "
 			code="https://github.com/BrandonMurch/Simon-Game"
 			demo="https://codepen.io/BrandonMurch/full/YaErGR/"
@@ -89,7 +89,7 @@ function getBoxes() {
 			key="4"
 			image={Quote}
 			name="Quote Generator"
-			description="A random quote generator"
+			description="A random quote generator that provides a random quote everytime the page is visited or one is requested. Quotes can easily be shared on twitter."
 			techStack="JQuery, CSS, HTML, Third Party API"
 			code="https://github.com/BrandonMurch/Quote-Generator"
 			demo="https://codepen.io/BrandonMurch/full/vRBZVY/"

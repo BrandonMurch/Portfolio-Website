@@ -58,12 +58,14 @@
 	color: var(--text-colour);
 	padding: 1rem 2rem;
 	font-size: 1.1rem;
+	text-transform: none;
 }
 
 .skills {
 	composes: description;
 	text-shadow: 0 0 0.9px var(--text-colour), 0 0 0.9px var(--text-colour),
 		0 0 0.9px var(--text-colour);
+	text-transform: lowercase;
 }
 
 .button {
