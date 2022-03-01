@@ -4,6 +4,7 @@ import Portfolio from "../images/portfolio.webp";
 import Quote from "../images/QuoteGenerator.webp";
 import SimonSays from "../images/Simon Says.webp";
 import tend from "../images/tend.webp";
+import drupal from "../images/drupal-blog-screenshot.webp";
 import { LinkButton } from "../button";
 import Boundary from "../boundaries/boundary2";
 import Slider from "../slider";
@@ -66,6 +67,15 @@ function getBoxes() {
 			techStack="Vuejs, vuerouter, vuex"
 			code="https://github.com/BrandonMurch/tend"
 			demo="https://tend.brandonmurch.com"
+		/>,
+				<ProjectBox
+			key="6"
+			image={drupal}
+			name="Drupal Blog Theme"
+			description="A custom theme for a drupal blog website."
+			techStack="Drupal, PHP, Twig"
+			code="https://github.com/BrandonMurch/drupal-blog-theme"
+			demo="https://drupal-blog-example.brandonmurch.com"
 		/>,
 		<ProjectBox
 			key="2"
